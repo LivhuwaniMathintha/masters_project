@@ -1,0 +1,88 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+/**
+ * @title StudentRegistry
+ * @dev Stores students and allows retrieval of all students for integration with Nethereum and C# DTO mapping.
+ */
+contract StudentRegistry {
+    struct Student {
+        bytes16 id;                 // Unique identifier for the student (Guid)
+        uint32 studentNumber;      // Numeric student ID (8 chars max)
+        bytes16 institutionId;      // Foreign key to Institution (Guid)
+        string enrollmentStatus;    // Enrollment status
+        bool isActive;              // Current active status
+        bytes16 funderContractId;   // Link to FundingContract (Guid)
+    }
+
+    Student[] private students;
+    mapping(bytes16 => uint256) private studentIndex; // For quick lookup
+
+    event StudentAdded(bytes16 indexed id, uint256 studentNumber, bytes16 institutionId);
+
+    function addStudent(
+        bytes16 _id,
+        uint32 _studentNumber,
+        bytes16 _institutionId,
+        string memory _enrollmentStatus,
+        bool _isActive,
+        bytes16 _funderContractId
+    ) public {
+        require(studentIndex[_id] == 0, "StudentRegistry: Student already exists.");
+        students.push(Student({
+            id: _id,
+            studentNumber: _studentNumber,
+            institutionId: _institutionId,
+            enrollmentStatus: _enrollmentStatus,
+            isActive: _isActive,
+            funderContractId: _funderContractId
+        }));
+        studentIndex[_id] = students.length; // 1-based index
+        emit StudentAdded(_id, _studentNumber, _institutionId);
+    }
+
+    function getAllStudents() public view returns (
+        bytes16[] memory ids,
+        uint32[] memory studentNumbers,
+        bytes16[] memory institutionIds,
+        string[] memory enrollmentStatuses,
+        string[] memory isActives,
+        bytes16[] memory funderContractIds
+    ) {
+        uint256 len = students.length;
+        ids = new bytes16[](len);
+        studentNumbers = new uint32[](len);
+        institutionIds = new bytes16[](len);
+        enrollmentStatuses = new string[](len);
+        isActives = new string[](len);
+        funderContractIds = new bytes16[](len);
+        for (uint256 i = 0; i < len; i++) {
+            Student storage s = students[i];
+            ids[i] = s.id;
+            studentNumbers[i] = s.studentNumber;
+            institutionIds[i] = s.institutionId;
+            enrollmentStatuses[i] = s.enrollmentStatus;
+            isActives[i] = s.isActive ? "true" : "false";
+            funderContractIds[i] = s.funderContractId;
+        }
+    }
+
+    function getStudentById(bytes16 _id) public view returns (
+        bytes16 id,
+        uint32 studentNumber,
+        bytes16 institutionId,
+        string memory enrollmentStatus,
+        string memory isActive,
+        bytes16 funderContractId
+    ) {
+        uint256 idx = studentIndex[_id];
+        require(idx > 0, "StudentRegistry: Student not found.");
+        Student storage s = students[idx - 1];
+        id = s.id;
+        studentNumber = s.studentNumber;
+        institutionId = s.institutionId;
+        enrollmentStatus = s.enrollmentStatus;
+        isActive = s.isActive ? "true" : "false";
+        funderContractId = s.funderContractId;
+    }
+}

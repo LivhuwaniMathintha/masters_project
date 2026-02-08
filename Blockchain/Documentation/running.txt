@@ -1,0 +1,3 @@
+clean and compile your contracts: npx hardhat clean && npx hardhat compile
+
+to deploy: npx hardhat ignition deploy ignition/modules/deployer.js --network localhost

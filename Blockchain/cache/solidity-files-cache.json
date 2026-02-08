@@ -1,0 +1,245 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "C:\\Users\\user\\Documents\\External_Projects\\BlockiFinAid\\Backend.Blockchain\\SmartContract\\contracts\\BankAccountRegistry.sol": {
+      "lastModificationDate": 1770403432890,
+      "contentHash": "c58b08b18bc44702bd3bd9bdee93bb91",
+      "sourceName": "contracts/BankAccountRegistry.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "debug": {
+            "revertStrings": "default"
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "BankAccountRegistry"
+      ]
+    },
+    "C:\\Users\\user\\Documents\\External_Projects\\BlockiFinAid\\Backend.Blockchain\\SmartContract\\contracts\\FunderRegistry.sol": {
+      "lastModificationDate": 1770403432890,
+      "contentHash": "d786e5bc62a8bffe5cc7ce9618b94002",
+      "sourceName": "contracts/FunderRegistry.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "debug": {
+            "revertStrings": "default"
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "FunderRegistry"
+      ]
+    },
+    "C:\\Users\\user\\Documents\\External_Projects\\BlockiFinAid\\Backend.Blockchain\\SmartContract\\contracts\\FundingConditions.sol": {
+      "lastModificationDate": 1770403432891,
+      "contentHash": "01403a53b7529d6b638278e473312bf1",
+      "sourceName": "contracts/FundingConditions.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "debug": {
+            "revertStrings": "default"
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "FundingConditions"
+      ]
+    },
+    "C:\\Users\\user\\Documents\\External_Projects\\BlockiFinAid\\Backend.Blockchain\\SmartContract\\contracts\\FundingContract.sol": {
+      "lastModificationDate": 1770403432892,
+      "contentHash": "a98b0a97296a0c8a9eff837e9975b694",
+      "sourceName": "contracts/FundingContract.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "debug": {
+            "revertStrings": "default"
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "FundingContract"
+      ]
+    },
+    "C:\\Users\\user\\Documents\\External_Projects\\BlockiFinAid\\Backend.Blockchain\\SmartContract\\contracts\\PaymentsRegistry.sol": {
+      "lastModificationDate": 1770403432892,
+      "contentHash": "4ff0a9bf5adaf44546cb083a88504fbb",
+      "sourceName": "contracts/PaymentsRegistry.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "debug": {
+            "revertStrings": "default"
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.28"
+      ],
+      "artifacts": [
+        "PaymentsRegistry"
+      ]
+    },
+    "C:\\Users\\user\\Documents\\External_Projects\\BlockiFinAid\\Backend.Blockchain\\SmartContract\\contracts\\Users.sol": {
+      "lastModificationDate": 1770403432893,
+      "contentHash": "1717147dc35c865ad8b18b7252e791e8",
+      "sourceName": "contracts/Users.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "debug": {
+            "revertStrings": "default"
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Users"
+      ]
+    }
+  }
+}
