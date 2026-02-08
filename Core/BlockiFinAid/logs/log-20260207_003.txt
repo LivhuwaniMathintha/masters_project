@@ -1,0 +1,657 @@
+2026-02-07 21:42:02.468 +02:00 [INF] Configured endpoint user-db, Consumer: BlockiFinAid.Services.Messaging.UserDbConsumer
+2026-02-07 21:42:02.517 +02:00 [INF] Configured endpoint bank-account-db, Consumer: BlockiFinAid.Services.Messaging.BankAccountDbConsumer
+2026-02-07 21:42:02.521 +02:00 [INF] Configured endpoint payment-event, Consumer: BlockiFinAid.Services.Messaging.PaymentEventConsumer
+2026-02-07 21:42:02.524 +02:00 [INF] Configured endpoint funding-db, Consumer: BlockiFinAid.Services.Messaging.FundingDbConsumer
+2026-02-07 21:42:02.527 +02:00 [INF] Configured endpoint funding-conditions-db, Consumer: BlockiFinAid.Services.Messaging.FundingConditionsDbConsumer
+2026-02-07 21:42:02.532 +02:00 [INF] Configured endpoint funder-db, Consumer: BlockiFinAid.Services.Messaging.FunderDbConsumer
+2026-02-07 21:42:02.535 +02:00 [INF] Configured endpoint payment-db, Consumer: BlockiFinAid.Services.Messaging.PaymentDbConsumer
+2026-02-07 21:42:02.859 +02:00 [INF] Seeding users...
+2026-02-07 21:42:02.862 +02:00 [INF] Seeding api admin...
+2026-02-07 21:42:02.869 +02:00 [INF] Hashing password for new user: BlockiFinAid.Data.Models.UserAccessControl
+2026-02-07 21:42:02.894 +02:00 [INF] Bus started: "rabbitmq://localhost/"
+2026-02-07 21:42:03.001 +02:00 [INF] MongoDB Database Background Service for Data Streaming is starting.
+2026-02-07 21:42:03.004 +02:00 [INF] Starting to watch for new inserts in BankAccountModel.
+2026-02-07 21:42:03.004 +02:00 [INF] Starting to watch for new inserts in FundingModel.
+2026-02-07 21:42:03.004 +02:00 [INF] Starting to watch for new inserts in FundingConditionsModel.
+2026-02-07 21:42:03.004 +02:00 [INF] Starting to watch for new inserts in UserModel.
+2026-02-07 21:42:03.004 +02:00 [INF] Starting to watch for new inserts in FunderModel.
+2026-02-07 21:42:03.004 +02:00 [INF] Starting to watch for new inserts in PaymentModel.
+2026-02-07 21:42:03.110 +02:00 [INF] User api-admin has been registered
+2026-02-07 21:42:03.156 +02:00 [INF] Reading funders from C:\Users\user\Documents\External_Projects\BlockiFinAid\Backend.Core\BlockiFinAid\Data/DataSeeds/funders.json
+2026-02-07 21:42:03.239 +02:00 [INF] Found 5 items in the JSON file. Starting to seed...
+2026-02-07 21:42:03.250 +02:00 [INF] Funder with Id National Student Financial Aid Scheme does not exist...
+2026-02-07 21:42:03.252 +02:00 [INF] Processing Funder National Student Financial Aid Scheme...
+2026-02-07 21:42:03.280 +02:00 [INF] Created FunderModel with id 39aee45e-4723-4d8d-bdf3-08d057efc154 in the collection funders
+2026-02-07 21:42:03.283 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:03.288 +02:00 [INF] New FunderModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:03.305 +02:00 [INF] Created audit trail with id 687381c8-09d3-42c2-8851-22b1c546364b
+2026-02-07 21:42:03.310 +02:00 [INF] Successfully added National Student Financial Aid Scheme from seeding data
+2026-02-07 21:42:03.314 +02:00 [INF] Funder with Id National Research Foundation does not exist...
+2026-02-07 21:42:03.317 +02:00 [INF] Processing Funder National Research Foundation...
+2026-02-07 21:42:03.324 +02:00 [INF] Created FunderModel with id c7c9ed3f-cfb8-4c00-8ef3-ba8a72121e38 in the collection funders
+2026-02-07 21:42:03.332 +02:00 [INF] Created audit trail with id 5e62cb89-4c29-44a9-86bc-f246475050d8
+2026-02-07 21:42:03.338 +02:00 [INF] Successfully added National Research Foundation from seeding data
+2026-02-07 21:42:03.342 +02:00 [INF] Funder with Id Canon Collins Trust does not exist...
+2026-02-07 21:42:03.343 +02:00 [INF] Processing Funder Canon Collins Trust...
+2026-02-07 21:42:03.350 +02:00 [INF] Created FunderModel with id 36d0ebe2-b479-4e83-b2cf-19c146d7e7b2 in the collection funders
+2026-02-07 21:42:03.356 +02:00 [INF] Created audit trail with id a5566d65-7891-4da4-9691-81a19a2f4267
+2026-02-07 21:42:03.360 +02:00 [INF] Successfully added Canon Collins Trust from seeding data
+2026-02-07 21:42:03.364 +02:00 [INF] Funder with Id Allan Gray Orbis Foundation does not exist...
+2026-02-07 21:42:03.366 +02:00 [INF] Processing Funder Allan Gray Orbis Foundation...
+2026-02-07 21:42:03.373 +02:00 [INF] Created FunderModel with id 9b8c6d8e-362f-45a5-9e48-4fbb8149f145 in the collection funders
+2026-02-07 21:42:03.378 +02:00 [INF] Created audit trail with id d4465c98-43da-4590-993a-8b2a252452ce
+2026-02-07 21:42:03.383 +02:00 [INF] Successfully added Allan Gray Orbis Foundation from seeding data
+2026-02-07 21:42:03.389 +02:00 [INF] Funder with Id Sector Education and Training Authorities does not exist...
+2026-02-07 21:42:03.391 +02:00 [INF] Processing Funder Sector Education and Training Authorities...
+2026-02-07 21:42:03.398 +02:00 [INF] Created FunderModel with id df21ea88-42a6-4008-a535-52c8e8dab1e0 in the collection funders
+2026-02-07 21:42:03.405 +02:00 [INF] Created audit trail with id bf1c8488-3503-4e42-8e0f-8fc44e2c4231
+2026-02-07 21:42:03.409 +02:00 [INF] Successfully added Sector Education and Training Authorities from seeding data
+2026-02-07 21:42:03.419 +02:00 [INF] Reading users from Json file C:\Users\user\Documents\External_Projects\BlockiFinAid\Backend.Core\BlockiFinAid\Data/DataSeeds/funderUsers.json
+2026-02-07 21:42:03.424 +02:00 [INF] Found 4 users in the JSON file. Starting to seed...
+2026-02-07 21:42:03.440 +02:00 [INF] Published message of type: FunderModel
+2026-02-07 21:42:03.442 +02:00 [INF] Publishing to Rabbit MQ has completed for FunderModel
+2026-02-07 21:42:03.447 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:03.450 +02:00 [INF] New FunderModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:03.458 +02:00 [INF] Published message of type: FunderModel
+2026-02-07 21:42:03.460 +02:00 [INF] Publishing to Rabbit MQ has completed for FunderModel
+2026-02-07 21:42:03.462 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:03.464 +02:00 [INF] New FunderModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:03.467 +02:00 [INF] Created BankAccountModel with id 2fad1466-ae07-45e8-b5a4-d27a6b52a2b9 in the collection bankAccounts
+2026-02-07 21:42:03.467 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:03.470 +02:00 [INF] Published message of type: FunderModel
+2026-02-07 21:42:03.473 +02:00 [INF] Publishing to Rabbit MQ has completed for FunderModel
+2026-02-07 21:42:03.474 +02:00 [INF] Created audit trail with id 538a8a0a-211e-4d25-84e6-c2d736fca309
+2026-02-07 21:42:03.475 +02:00 [INF] New BankAccountModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:03.475 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:03.482 +02:00 [INF] New FunderModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:03.482 +02:00 [INF] UserFunder National Student Financial Aid Scheme bank account seeded successfully with studentNumber S0714879
+2026-02-07 21:42:03.487 +02:00 [INF] Published message of type: FunderModel
+2026-02-07 21:42:03.490 +02:00 [INF] Publishing to Rabbit MQ has completed for FunderModel
+2026-02-07 21:42:03.492 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:03.494 +02:00 [INF] New FunderModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:03.500 +02:00 [INF] Published message of type: BankAccountModel
+2026-02-07 21:42:03.500 +02:00 [INF] Published message of type: FunderModel
+2026-02-07 21:42:03.502 +02:00 [INF] Publishing to Rabbit MQ has completed for BankAccountModel
+2026-02-07 21:42:03.505 +02:00 [INF] Publishing to Rabbit MQ has completed for FunderModel
+2026-02-07 21:42:03.517 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:03.517 +02:00 [INF] Created UserModel with id 808f36e8-2140-4875-b7b7-e8ed83c76826 in the collection users
+2026-02-07 21:42:03.523 +02:00 [INF] New UserModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:03.545 +02:00 [INF] Published message of type: UserModel
+2026-02-07 21:42:03.546 +02:00 [INF] Created audit trail with id cdc34ce0-d8b0-4f8f-9814-11962da0308a
+2026-02-07 21:42:03.548 +02:00 [INF] Publishing to Rabbit MQ has completed for UserModel
+2026-02-07 21:42:03.555 +02:00 [INF] UserFunder National Student Financial Aid Scheme seeded with studentNumber S0714879
+2026-02-07 21:42:03.573 +02:00 [INF] Created BankAccountModel with id 3ecdbae2-8f23-4a88-8202-861ac11a6c38 in the collection bankAccounts
+2026-02-07 21:42:03.573 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:03.576 +02:00 [INF] New BankAccountModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:03.580 +02:00 [INF] Created audit trail with id cdb958a2-96de-4aec-81c1-e18b25ca8cf3
+2026-02-07 21:42:03.582 +02:00 [INF] Published message of type: BankAccountModel
+2026-02-07 21:42:03.586 +02:00 [INF] Publishing to Rabbit MQ has completed for BankAccountModel
+2026-02-07 21:42:03.587 +02:00 [INF] UserFunder National Research Foundation bank account seeded successfully with studentNumber S5470099
+2026-02-07 21:42:03.594 +02:00 [INF] Created UserModel with id 3ad35c3e-8ccb-4d47-b96c-6d4b234fc17b in the collection users
+2026-02-07 21:42:03.594 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:03.598 +02:00 [INF] New UserModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:03.602 +02:00 [INF] Created audit trail with id fcc698b9-e07a-4ed0-9b74-d0dabdd67037
+2026-02-07 21:42:03.603 +02:00 [INF] Published message of type: UserModel
+2026-02-07 21:42:03.604 +02:00 [INF] [Bank Account Consumer] - BankAccountNumber: 57347775 has been added to the database and retrieved in real-time. Queue for Smart contract addition
+2026-02-07 21:42:03.606 +02:00 [INF] Publishing to Rabbit MQ has completed for UserModel
+2026-02-07 21:42:03.608 +02:00 [INF] UserFunder National Research Foundation seeded with studentNumber S5470099
+2026-02-07 21:42:03.627 +02:00 [INF] Created BankAccountModel with id 8d269606-23bb-40e3-b0f7-a9da77aca060 in the collection bankAccounts
+2026-02-07 21:42:03.627 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:03.631 +02:00 [INF] New BankAccountModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:03.635 +02:00 [INF] Created audit trail with id bb21a874-1688-4424-81c0-06143ed6f40e
+2026-02-07 21:42:03.636 +02:00 [INF] Published message of type: BankAccountModel
+2026-02-07 21:42:03.639 +02:00 [INF] Publishing to Rabbit MQ has completed for BankAccountModel
+2026-02-07 21:42:03.640 +02:00 [INF] UserFunder Allan Gray Orbis Foundation bank account seeded successfully with studentNumber S7261146
+2026-02-07 21:42:03.647 +02:00 [INF] Created UserModel with id 27a0d17a-13e8-41c5-bc63-7212a0b116cd in the collection users
+2026-02-07 21:42:03.647 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:03.651 +02:00 [INF] New UserModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:03.654 +02:00 [INF] Created audit trail with id c129d3fc-bf3b-4139-bcdf-0267cd02c41e
+2026-02-07 21:42:03.656 +02:00 [INF] Published message of type: UserModel
+2026-02-07 21:42:03.657 +02:00 [INF] Publishing to Rabbit MQ has completed for UserModel
+2026-02-07 21:42:03.659 +02:00 [INF] UserFunder Allan Gray Orbis Foundation seeded with studentNumber S7261146
+2026-02-07 21:42:03.671 +02:00 [INF] Created BankAccountModel with id c01cd94d-3880-409a-a027-81c243089209 in the collection bankAccounts
+2026-02-07 21:42:03.671 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:03.675 +02:00 [INF] New BankAccountModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:03.678 +02:00 [INF] Created audit trail with id 82c996aa-c5fc-40fc-9bb1-f3d4772f5756
+2026-02-07 21:42:03.680 +02:00 [INF] Published message of type: BankAccountModel
+2026-02-07 21:42:03.682 +02:00 [INF] Publishing to Rabbit MQ has completed for BankAccountModel
+2026-02-07 21:42:03.684 +02:00 [INF] UserFunder Sector Education and Training Authorities bank account seeded successfully with studentNumber S5273094
+2026-02-07 21:42:03.691 +02:00 [INF] Created UserModel with id 352d5854-3d47-47fa-94c4-e481e6eb57dc in the collection users
+2026-02-07 21:42:03.691 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:03.694 +02:00 [INF] New UserModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:03.696 +02:00 [INF] Created audit trail with id 15790c23-6e0e-43c6-9a4b-8d56ebed13c9
+2026-02-07 21:42:03.699 +02:00 [INF] Published message of type: UserModel
+2026-02-07 21:42:03.700 +02:00 [INF] Publishing to Rabbit MQ has completed for UserModel
+2026-02-07 21:42:03.701 +02:00 [INF] UserFunder Sector Education and Training Authorities seeded with studentNumber S5273094
+2026-02-07 21:42:03.704 +02:00 [INF] [User Seeder] - Reading users from Json file C:\Users\user\Documents\External_Projects\BlockiFinAid\Backend.Core\BlockiFinAid\Data/DataSeeds/users.json
+2026-02-07 21:42:03.706 +02:00 [INF] [User Seeder] - Found 11 users in the JSON file. Starting to seed...
+2026-02-07 21:42:03.713 +02:00 [INF] [User Seeder] - User with email jane.smith@uj.ac.za does not exist...
+2026-02-07 21:42:03.717 +02:00 [INF] [User Seeder] - Processing UAM for jane.smith@uj.ac.za... with password aDg6#di1...
+2026-02-07 21:42:03.718 +02:00 [INF] Hashing password for new user: BlockiFinAid.Data.Models.UserAccessControl
+2026-02-07 21:42:03.794 +02:00 [INF] User Jane Smith has been registered
+2026-02-07 21:42:03.795 +02:00 [INF] [User Seeder] - UAM for jane.smith@uj.ac.za has been registered with role admin
+2026-02-07 21:42:03.805 +02:00 [INF] Created BankAccountModel with id 51c0f195-d31f-462c-b465-ab54dbdacec5 in the collection bankAccounts
+2026-02-07 21:42:03.805 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:03.808 +02:00 [INF] New BankAccountModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:03.812 +02:00 [INF] Created audit trail with id b10d7ac0-3fd6-423e-8b25-87f53ce3e993
+2026-02-07 21:42:03.812 +02:00 [INF] Published message of type: BankAccountModel
+2026-02-07 21:42:03.815 +02:00 [INF] Publishing to Rabbit MQ has completed for BankAccountModel
+2026-02-07 21:42:03.816 +02:00 [INF] [User Seeder] - UserFunder Jane Smith bank account seeded successfully with studentNumber S6202057
+2026-02-07 21:42:03.823 +02:00 [INF] Created UserModel with id d382afdc-c610-40c4-8b00-f796f9eaa75a in the collection users
+2026-02-07 21:42:03.823 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:03.825 +02:00 [INF] New UserModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:03.828 +02:00 [INF] Created audit trail with id f7014bf0-93a4-4b9b-b8dc-8903172fb823
+2026-02-07 21:42:03.830 +02:00 [INF] Published message of type: UserModel
+2026-02-07 21:42:03.832 +02:00 [INF] Publishing to Rabbit MQ has completed for UserModel
+2026-02-07 21:42:03.833 +02:00 [INF] [User Seeder] - User Jane Smith seeded with studentNumber S6202057
+2026-02-07 21:42:03.858 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:03.858 +02:00 [INF] Created FundingConditionsModel with id ada64fc1-d0ca-4dca-acf8-2dcd3b473ded in the collection fundingConditions
+2026-02-07 21:42:03.864 +02:00 [INF] New FundingConditionsModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:03.868 +02:00 [INF] Created audit trail with id 73ff5feb-9ffb-4e33-9e20-df3f4779164a
+2026-02-07 21:42:03.876 +02:00 [INF] [User Seeder] - Funding conditions for jane.smith@uj.ac.za has been created.
+2026-02-07 21:42:03.890 +02:00 [INF] Published message of type: FundingConditionsModel
+2026-02-07 21:42:03.893 +02:00 [INF] Publishing to Rabbit MQ has completed for FundingConditionsModel
+2026-02-07 21:42:03.906 +02:00 [INF] Created FundingModel with id 68ef330d-fa5c-48fb-99cf-76e384171e4b in the collection funding
+2026-02-07 21:42:03.906 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:03.914 +02:00 [INF] New FundingModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:03.914 +02:00 [INF] Created audit trail with id 88703e67-735e-47f1-9ead-fa721b2b1fff
+2026-02-07 21:42:03.923 +02:00 [INF] [User Seeder] - User Model jane.smith@uj.ac.za has been created.
+2026-02-07 21:42:03.932 +02:00 [INF] [User Seeder] - User with email john.doe@uj.ac.za does not exist...
+2026-02-07 21:42:03.935 +02:00 [INF] [User Seeder] - Processing UAM for john.doe@uj.ac.za... with password VgzSOrmo...
+2026-02-07 21:42:03.936 +02:00 [INF] Published message of type: FundingModel
+2026-02-07 21:42:03.938 +02:00 [INF] Hashing password for new user: BlockiFinAid.Data.Models.UserAccessControl
+2026-02-07 21:42:03.940 +02:00 [INF] Publishing to Rabbit MQ has completed for FundingModel
+2026-02-07 21:42:04.031 +02:00 [INF] User John Doe has been registered
+2026-02-07 21:42:04.033 +02:00 [INF] [User Seeder] - UAM for john.doe@uj.ac.za has been registered with role admin
+2026-02-07 21:42:04.040 +02:00 [INF] Created BankAccountModel with id eb17435f-33d8-4f90-b507-f91d01e1a242 in the collection bankAccounts
+2026-02-07 21:42:04.041 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:04.043 +02:00 [INF] New BankAccountModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:04.046 +02:00 [INF] Published message of type: BankAccountModel
+2026-02-07 21:42:04.047 +02:00 [INF] Created audit trail with id 42b56789-37a6-4ab8-9c39-16f8820bf829
+2026-02-07 21:42:04.048 +02:00 [INF] Publishing to Rabbit MQ has completed for BankAccountModel
+2026-02-07 21:42:04.052 +02:00 [INF] [User Seeder] - UserFunder John Doe bank account seeded successfully with studentNumber S6653432
+2026-02-07 21:42:04.056 +02:00 [INF] Created UserModel with id cc727f02-65d6-438f-b339-3bb2cc5469e4 in the collection users
+2026-02-07 21:42:04.056 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:04.059 +02:00 [INF] New UserModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:04.063 +02:00 [INF] Published message of type: UserModel
+2026-02-07 21:42:04.063 +02:00 [INF] Created audit trail with id dc43ca72-a58a-4f0e-b78c-8a4043163493
+2026-02-07 21:42:04.064 +02:00 [INF] Publishing to Rabbit MQ has completed for UserModel
+2026-02-07 21:42:04.069 +02:00 [INF] [User Seeder] - User John Doe seeded with studentNumber S6653432
+2026-02-07 21:42:04.075 +02:00 [INF] Created FundingConditionsModel with id 7ceafa13-e79f-4a14-8e83-66c605dfe59a in the collection fundingConditions
+2026-02-07 21:42:04.075 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:04.077 +02:00 [INF] New FundingConditionsModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:04.081 +02:00 [INF] Created audit trail with id 9ad8eb58-ee95-4471-8a9d-d520a4623e59
+2026-02-07 21:42:04.082 +02:00 [INF] Published message of type: FundingConditionsModel
+2026-02-07 21:42:04.084 +02:00 [INF] Publishing to Rabbit MQ has completed for FundingConditionsModel
+2026-02-07 21:42:04.085 +02:00 [INF] [User Seeder] - Funding conditions for john.doe@uj.ac.za has been created.
+2026-02-07 21:42:04.109 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:04.110 +02:00 [INF] Created FundingModel with id 018825cc-81b2-4960-b085-c52eb0019211 in the collection funding
+2026-02-07 21:42:04.112 +02:00 [INF] New FundingModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:04.118 +02:00 [INF] Published message of type: FundingModel
+2026-02-07 21:42:04.120 +02:00 [INF] Created audit trail with id b21582a3-0f6a-48ac-bd97-debf86abbd5d
+2026-02-07 21:42:04.120 +02:00 [INF] Publishing to Rabbit MQ has completed for FundingModel
+2026-02-07 21:42:04.126 +02:00 [INF] [User Seeder] - User Model john.doe@uj.ac.za has been created.
+2026-02-07 21:42:04.135 +02:00 [INF] [User Seeder] - User with email jane.smith@uj.ac.za already exists...
+2026-02-07 21:42:04.144 +02:00 [INF] [User Seeder] - User with email peter.jones@student.uj.ac.za does not exist...
+2026-02-07 21:42:04.146 +02:00 [INF] [User Seeder] - Processing UAM for peter.jones@student.uj.ac.za... with password p%$TtNgw...
+2026-02-07 21:42:04.148 +02:00 [INF] Hashing password for new user: BlockiFinAid.Data.Models.UserAccessControl
+2026-02-07 21:42:04.253 +02:00 [INF] User Peter Jones has been registered
+2026-02-07 21:42:04.256 +02:00 [INF] [User Seeder] - UAM for peter.jones@student.uj.ac.za has been registered with role student
+2026-02-07 21:42:04.269 +02:00 [INF] Created BankAccountModel with id 492876e6-baa6-4784-928d-760fea7220ce in the collection bankAccounts
+2026-02-07 21:42:04.269 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:04.273 +02:00 [INF] New BankAccountModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:04.276 +02:00 [INF] Created audit trail with id 72bb71cb-e138-4ede-bdae-c524b77b04f0
+2026-02-07 21:42:04.278 +02:00 [INF] Published message of type: BankAccountModel
+2026-02-07 21:42:04.281 +02:00 [INF] Publishing to Rabbit MQ has completed for BankAccountModel
+2026-02-07 21:42:04.283 +02:00 [INF] [User Seeder] - UserFunder Peter Jones bank account seeded successfully with studentNumber S1813933
+2026-02-07 21:42:04.290 +02:00 [INF] Created UserModel with id b8f69da8-3229-41a4-967c-346c8884fea1 in the collection users
+2026-02-07 21:42:04.291 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:04.294 +02:00 [INF] New UserModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:04.299 +02:00 [INF] Created audit trail with id 05dd03c9-b992-462c-9903-55fe3240442f
+2026-02-07 21:42:04.300 +02:00 [INF] Published message of type: UserModel
+2026-02-07 21:42:04.302 +02:00 [INF] Publishing to Rabbit MQ has completed for UserModel
+2026-02-07 21:42:04.304 +02:00 [INF] [User Seeder] - User Peter Jones seeded with studentNumber S1813933
+2026-02-07 21:42:04.310 +02:00 [INF] Created FundingConditionsModel with id ddce5a43-8078-4a23-89a7-a5c0c37c24d7 in the collection fundingConditions
+2026-02-07 21:42:04.310 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:04.314 +02:00 [INF] New FundingConditionsModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:04.318 +02:00 [INF] Created audit trail with id 39f32deb-c118-459a-b4b7-197ab770a924
+2026-02-07 21:42:04.319 +02:00 [INF] Published message of type: FundingConditionsModel
+2026-02-07 21:42:04.322 +02:00 [INF] Publishing to Rabbit MQ has completed for FundingConditionsModel
+2026-02-07 21:42:04.324 +02:00 [INF] [User Seeder] - Funding conditions for peter.jones@student.uj.ac.za has been created.
+2026-02-07 21:42:04.331 +02:00 [INF] Created FundingModel with id 6892eab8-e8de-4170-bd98-ffebeab7793f in the collection funding
+2026-02-07 21:42:04.331 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:04.335 +02:00 [INF] New FundingModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:04.338 +02:00 [INF] Created audit trail with id 4d9730ff-455d-4168-8bd4-c3297e521e16
+2026-02-07 21:42:04.341 +02:00 [INF] Published message of type: FundingModel
+2026-02-07 21:42:04.342 +02:00 [INF] Publishing to Rabbit MQ has completed for FundingModel
+2026-02-07 21:42:04.344 +02:00 [INF] [User Seeder] - User Model peter.jones@student.uj.ac.za has been created.
+2026-02-07 21:42:04.354 +02:00 [INF] [User Seeder] - User with email mary.williams@student.uj.ac.za does not exist...
+2026-02-07 21:42:04.356 +02:00 [INF] [User Seeder] - Processing UAM for mary.williams@student.uj.ac.za... with password %UpEvZnR...
+2026-02-07 21:42:04.357 +02:00 [INF] Hashing password for new user: BlockiFinAid.Data.Models.UserAccessControl
+2026-02-07 21:42:04.440 +02:00 [INF] User Mary Williams has been registered
+2026-02-07 21:42:04.442 +02:00 [INF] [User Seeder] - UAM for mary.williams@student.uj.ac.za has been registered with role student
+2026-02-07 21:42:04.454 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:04.454 +02:00 [INF] Created BankAccountModel with id 62149a77-fe26-42f1-a176-541e333acc34 in the collection bankAccounts
+2026-02-07 21:42:04.456 +02:00 [INF] New BankAccountModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:04.466 +02:00 [INF] Published message of type: BankAccountModel
+2026-02-07 21:42:04.467 +02:00 [INF] Created audit trail with id 54eb3303-97c6-4a9b-a3ac-c9d0b47a9984
+2026-02-07 21:42:04.469 +02:00 [INF] Publishing to Rabbit MQ has completed for BankAccountModel
+2026-02-07 21:42:04.474 +02:00 [INF] [User Seeder] - UserFunder Mary Williams bank account seeded successfully with studentNumber S6773699
+2026-02-07 21:42:04.480 +02:00 [INF] Created UserModel with id 68328292-56c1-480d-85cb-562b3becc5e8 in the collection users
+2026-02-07 21:42:04.480 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:04.485 +02:00 [INF] New UserModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:04.488 +02:00 [INF] Created audit trail with id 8eab5152-a616-47be-b129-30f97f4ffd0d
+2026-02-07 21:42:04.490 +02:00 [INF] Published message of type: UserModel
+2026-02-07 21:42:04.492 +02:00 [INF] Publishing to Rabbit MQ has completed for UserModel
+2026-02-07 21:42:04.494 +02:00 [INF] [User Seeder] - User Mary Williams seeded with studentNumber S6773699
+2026-02-07 21:42:04.503 +02:00 [INF] Created FundingConditionsModel with id 659e73b6-af0c-4e4c-8dda-340c30d174ee in the collection fundingConditions
+2026-02-07 21:42:04.503 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:04.507 +02:00 [INF] New FundingConditionsModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:04.510 +02:00 [INF] Created audit trail with id 1cf75bbc-4e67-4112-a6fb-aec5535486d1
+2026-02-07 21:42:04.512 +02:00 [INF] Published message of type: FundingConditionsModel
+2026-02-07 21:42:04.514 +02:00 [INF] Publishing to Rabbit MQ has completed for FundingConditionsModel
+2026-02-07 21:42:04.516 +02:00 [INF] [User Seeder] - Funding conditions for mary.williams@student.uj.ac.za has been created.
+2026-02-07 21:42:04.523 +02:00 [INF] Created FundingModel with id 6bf9b5d6-2122-4d12-aee4-cc4cdc25dcaf in the collection funding
+2026-02-07 21:42:04.523 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:04.526 +02:00 [INF] New FundingModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:04.529 +02:00 [INF] Created audit trail with id 3a259a03-4c5d-41a7-ad85-5b5fb8879384
+2026-02-07 21:42:04.531 +02:00 [INF] Published message of type: FundingModel
+2026-02-07 21:42:04.532 +02:00 [INF] Publishing to Rabbit MQ has completed for FundingModel
+2026-02-07 21:42:04.534 +02:00 [INF] [User Seeder] - User Model mary.williams@student.uj.ac.za has been created.
+2026-02-07 21:42:04.540 +02:00 [INF] [User Seeder] - User with email david.chen@student.uj.ac.za does not exist...
+2026-02-07 21:42:04.542 +02:00 [INF] [User Seeder] - Processing UAM for david.chen@student.uj.ac.za... with password 8Q!kq2s0...
+2026-02-07 21:42:04.543 +02:00 [INF] Hashing password for new user: BlockiFinAid.Data.Models.UserAccessControl
+2026-02-07 21:42:04.618 +02:00 [INF] Consuming funding model for Funder National Student Financial Aid Scheme from the queue: 
+2026-02-07 21:42:04.625 +02:00 [INF] Looking for funder: National Student Financial Aid Scheme with id: 39aee45e-4723-4d8d-bdf3-08d057efc154 in the smart contract
+2026-02-07 21:42:04.628 +02:00 [INF] User David Chen has been registered
+2026-02-07 21:42:04.629 +02:00 [INF] [User Seeder] - UAM for david.chen@student.uj.ac.za has been registered with role student
+2026-02-07 21:42:04.639 +02:00 [INF] Created BankAccountModel with id 90f0af71-b000-4e4c-aa2f-135f720f93f7 in the collection bankAccounts
+2026-02-07 21:42:04.639 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:04.642 +02:00 [INF] New BankAccountModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:04.645 +02:00 [INF] Created audit trail with id d8ef407d-a4da-421b-b4ac-3527971ac842
+2026-02-07 21:42:04.647 +02:00 [INF] Published message of type: BankAccountModel
+2026-02-07 21:42:04.649 +02:00 [INF] Publishing to Rabbit MQ has completed for BankAccountModel
+2026-02-07 21:42:04.651 +02:00 [INF] [User Seeder] - UserFunder David Chen bank account seeded successfully with studentNumber S2480063
+2026-02-07 21:42:04.656 +02:00 [INF] Created UserModel with id 82179175-c762-4a57-94d0-94520dff652f in the collection users
+2026-02-07 21:42:04.656 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:04.659 +02:00 [INF] New UserModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:04.662 +02:00 [INF] Created audit trail with id fa702edf-df03-42da-aa79-1ca4cc7ab97a
+2026-02-07 21:42:04.665 +02:00 [INF] Published message of type: UserModel
+2026-02-07 21:42:04.668 +02:00 [INF] Publishing to Rabbit MQ has completed for UserModel
+2026-02-07 21:42:04.670 +02:00 [INF] [User Seeder] - User David Chen seeded with studentNumber S2480063
+2026-02-07 21:42:04.678 +02:00 [INF] Created FundingConditionsModel with id f51ded87-a966-4ac1-907c-32ea14b8c7fb in the collection fundingConditions
+2026-02-07 21:42:04.679 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:04.682 +02:00 [INF] New FundingConditionsModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:04.685 +02:00 [INF] Created audit trail with id db73ee5f-1ad8-4e36-bbaa-9cdd113db0ea
+2026-02-07 21:42:04.688 +02:00 [INF] Published message of type: FundingConditionsModel
+2026-02-07 21:42:04.690 +02:00 [INF] Publishing to Rabbit MQ has completed for FundingConditionsModel
+2026-02-07 21:42:04.690 +02:00 [INF] [User Seeder] - Funding conditions for david.chen@student.uj.ac.za has been created.
+2026-02-07 21:42:04.697 +02:00 [INF] Created FundingModel with id 45b64410-bd2b-4f99-a79c-530296fa600c in the collection funding
+2026-02-07 21:42:04.697 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:04.700 +02:00 [INF] New FundingModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:04.704 +02:00 [INF] Created audit trail with id b44b2050-ed00-4466-8235-f7508c6410d9
+2026-02-07 21:42:04.705 +02:00 [INF] Published message of type: FundingModel
+2026-02-07 21:42:04.707 +02:00 [INF] Publishing to Rabbit MQ has completed for FundingModel
+2026-02-07 21:42:04.708 +02:00 [INF] [User Seeder] - User Model david.chen@student.uj.ac.za has been created.
+2026-02-07 21:42:04.716 +02:00 [INF] [User Seeder] - User with email emily.white@student.uj.ac.za does not exist...
+2026-02-07 21:42:04.717 +02:00 [INF] [User Seeder] - Processing UAM for emily.white@student.uj.ac.za... with password FKdUHh%C...
+2026-02-07 21:42:04.719 +02:00 [INF] Hashing password for new user: BlockiFinAid.Data.Models.UserAccessControl
+2026-02-07 21:42:04.806 +02:00 [INF] User Emily White has been registered
+2026-02-07 21:42:04.808 +02:00 [INF] [User Seeder] - UAM for emily.white@student.uj.ac.za has been registered with role student
+2026-02-07 21:42:04.821 +02:00 [INF] Created BankAccountModel with id d52769c3-7946-4d2b-9dd9-19b43e6998f6 in the collection bankAccounts
+2026-02-07 21:42:04.821 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:04.824 +02:00 [INF] New BankAccountModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:04.827 +02:00 [INF] Created audit trail with id 183d960d-eb55-4c94-b21c-7888c907e4cf
+2026-02-07 21:42:04.829 +02:00 [INF] Published message of type: BankAccountModel
+2026-02-07 21:42:04.831 +02:00 [INF] Publishing to Rabbit MQ has completed for BankAccountModel
+2026-02-07 21:42:04.833 +02:00 [INF] [User Seeder] - UserFunder Emily White bank account seeded successfully with studentNumber S8819772
+2026-02-07 21:42:04.840 +02:00 [INF] Created UserModel with id 8a86e66c-8390-4ad2-8274-68bcda9c59d0 in the collection users
+2026-02-07 21:42:04.841 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:04.844 +02:00 [INF] New UserModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:04.847 +02:00 [INF] Created audit trail with id 3de301cb-2e8b-4cb7-8cf3-aa1c7625d28b
+2026-02-07 21:42:04.850 +02:00 [INF] Published message of type: UserModel
+2026-02-07 21:42:04.852 +02:00 [INF] Publishing to Rabbit MQ has completed for UserModel
+2026-02-07 21:42:04.855 +02:00 [INF] [User Seeder] - User Emily White seeded with studentNumber S8819772
+2026-02-07 21:42:04.865 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:04.865 +02:00 [INF] Created FundingConditionsModel with id 5a9b7330-6a69-46cf-825a-c6b09e8e2252 in the collection fundingConditions
+2026-02-07 21:42:04.867 +02:00 [INF] New FundingConditionsModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:04.873 +02:00 [INF] Created audit trail with id 4081d467-b69b-4db1-8a39-4d6876f45f8e
+2026-02-07 21:42:04.874 +02:00 [INF] Published message of type: FundingConditionsModel
+2026-02-07 21:42:04.876 +02:00 [INF] Publishing to Rabbit MQ has completed for FundingConditionsModel
+2026-02-07 21:42:04.878 +02:00 [INF] [User Seeder] - Funding conditions for emily.white@student.uj.ac.za has been created.
+2026-02-07 21:42:04.886 +02:00 [INF] Created FundingModel with id f084f37d-e24d-44ab-aec2-fab0ea958f21 in the collection funding
+2026-02-07 21:42:04.886 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:04.889 +02:00 [INF] New FundingModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:04.892 +02:00 [INF] Created audit trail with id 30e1e732-3d9a-4d45-b82c-1575d4d90e73
+2026-02-07 21:42:04.894 +02:00 [INF] Published message of type: FundingModel
+2026-02-07 21:42:04.896 +02:00 [INF] Publishing to Rabbit MQ has completed for FundingModel
+2026-02-07 21:42:04.897 +02:00 [INF] [User Seeder] - User Model emily.white@student.uj.ac.za has been created.
+2026-02-07 21:42:04.905 +02:00 [INF] [User Seeder] - User with email chris.lee@student.uj.ac.za does not exist...
+2026-02-07 21:42:04.906 +02:00 [INF] [User Seeder] - Processing UAM for chris.lee@student.uj.ac.za... with password gfWUm*Ow...
+2026-02-07 21:42:04.907 +02:00 [INF] Hashing password for new user: BlockiFinAid.Data.Models.UserAccessControl
+2026-02-07 21:42:04.959 +02:00 [INF] Adding data from db to smart contract in real-time for funder model complete with status: 0xa7a771b3d85c05f3ac6d7a5d8010d948cd552b2da6c253e56663d6273284b622
+2026-02-07 21:42:04.989 +02:00 [INF] User Chris Lee has been registered
+2026-02-07 21:42:04.991 +02:00 [INF] [User Seeder] - UAM for chris.lee@student.uj.ac.za has been registered with role student
+2026-02-07 21:42:05.003 +02:00 [INF] Created BankAccountModel with id 1893e39c-b28b-4383-88a8-a9001fec748f in the collection bankAccounts
+2026-02-07 21:42:05.003 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:05.006 +02:00 [INF] New BankAccountModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:05.009 +02:00 [INF] Created audit trail with id 4b5b60b5-5e49-4f44-9d03-f9717b6e391c
+2026-02-07 21:42:05.011 +02:00 [INF] Published message of type: BankAccountModel
+2026-02-07 21:42:05.013 +02:00 [INF] Publishing to Rabbit MQ has completed for BankAccountModel
+2026-02-07 21:42:05.014 +02:00 [INF] [User Seeder] - UserFunder Chris Lee bank account seeded successfully with studentNumber S9629323
+2026-02-07 21:42:05.020 +02:00 [INF] Created UserModel with id 928a615b-6329-493a-924a-7d7ec8258b90 in the collection users
+2026-02-07 21:42:05.020 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:05.023 +02:00 [INF] New UserModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:05.026 +02:00 [INF] Created audit trail with id e3e92d24-0280-4605-8112-cb80a1f91160
+2026-02-07 21:42:05.028 +02:00 [INF] Published message of type: UserModel
+2026-02-07 21:42:05.030 +02:00 [INF] Publishing to Rabbit MQ has completed for UserModel
+2026-02-07 21:42:05.032 +02:00 [INF] [User Seeder] - User Chris Lee seeded with studentNumber S9629323
+2026-02-07 21:42:05.041 +02:00 [INF] Created FundingConditionsModel with id 0a4d7b58-fb66-4dcf-adc8-2b888ee3a5b5 in the collection fundingConditions
+2026-02-07 21:42:05.041 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:05.044 +02:00 [INF] New FundingConditionsModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:05.048 +02:00 [INF] Published message of type: FundingConditionsModel
+2026-02-07 21:42:05.048 +02:00 [INF] Created audit trail with id b3d5d149-2afa-4dac-8911-6efc0552266b
+2026-02-07 21:42:05.050 +02:00 [INF] Publishing to Rabbit MQ has completed for FundingConditionsModel
+2026-02-07 21:42:05.054 +02:00 [INF] [User Seeder] - Funding conditions for chris.lee@student.uj.ac.za has been created.
+2026-02-07 21:42:05.059 +02:00 [INF] Created FundingModel with id acb8c0bc-9bf4-43a5-91c5-9f593bb504db in the collection funding
+2026-02-07 21:42:05.060 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:05.063 +02:00 [INF] New FundingModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:05.066 +02:00 [INF] Created audit trail with id 3a6fe0ef-6d73-4c0d-b828-85bef0648293
+2026-02-07 21:42:05.067 +02:00 [INF] Published message of type: FundingModel
+2026-02-07 21:42:05.069 +02:00 [INF] Publishing to Rabbit MQ has completed for FundingModel
+2026-02-07 21:42:05.070 +02:00 [INF] [User Seeder] - User Model chris.lee@student.uj.ac.za has been created.
+2026-02-07 21:42:05.076 +02:00 [INF] [User Seeder] - User with email sarah.brown@student.uj.ac.za does not exist...
+2026-02-07 21:42:05.078 +02:00 [INF] [User Seeder] - Processing UAM for sarah.brown@student.uj.ac.za... with password ILS&O6(Z...
+2026-02-07 21:42:05.080 +02:00 [INF] Hashing password for new user: BlockiFinAid.Data.Models.UserAccessControl
+2026-02-07 21:42:05.152 +02:00 [INF] User Sarah Brown has been registered
+2026-02-07 21:42:05.154 +02:00 [INF] [User Seeder] - UAM for sarah.brown@student.uj.ac.za has been registered with role student
+2026-02-07 21:42:05.161 +02:00 [INF] Created BankAccountModel with id 6ec99912-9b2f-40dc-9a7a-45d3467b5da0 in the collection bankAccounts
+2026-02-07 21:42:05.161 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:05.165 +02:00 [INF] New BankAccountModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:05.170 +02:00 [INF] Published message of type: BankAccountModel
+2026-02-07 21:42:05.170 +02:00 [INF] Created audit trail with id ed7a8862-081d-43b2-9e09-4e995a4362ba
+2026-02-07 21:42:05.172 +02:00 [INF] Publishing to Rabbit MQ has completed for BankAccountModel
+2026-02-07 21:42:05.177 +02:00 [INF] [User Seeder] - UserFunder Sarah Brown bank account seeded successfully with studentNumber S5074071
+2026-02-07 21:42:05.183 +02:00 [INF] Created UserModel with id bb71a6f9-3ccd-4803-ae7f-930ad172d777 in the collection users
+2026-02-07 21:42:05.183 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:05.187 +02:00 [INF] New UserModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:05.191 +02:00 [INF] Created audit trail with id f505f67b-044d-4671-ab90-447ddd2e551a
+2026-02-07 21:42:05.192 +02:00 [INF] Published message of type: UserModel
+2026-02-07 21:42:05.194 +02:00 [INF] Publishing to Rabbit MQ has completed for UserModel
+2026-02-07 21:42:05.196 +02:00 [INF] [User Seeder] - User Sarah Brown seeded with studentNumber S5074071
+2026-02-07 21:42:05.203 +02:00 [INF] Created FundingConditionsModel with id 209c0b65-027f-4e46-9d5f-508b8c18fb82 in the collection fundingConditions
+2026-02-07 21:42:05.203 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:05.207 +02:00 [INF] New FundingConditionsModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:05.210 +02:00 [INF] Created audit trail with id c294e92a-3e20-4ff0-ad40-8021bbf815af
+2026-02-07 21:42:05.211 +02:00 [INF] Published message of type: FundingConditionsModel
+2026-02-07 21:42:05.214 +02:00 [INF] Publishing to Rabbit MQ has completed for FundingConditionsModel
+2026-02-07 21:42:05.215 +02:00 [INF] [User Seeder] - Funding conditions for sarah.brown@student.uj.ac.za has been created.
+2026-02-07 21:42:05.221 +02:00 [INF] Created FundingModel with id 9094faef-e74c-4fc6-aba7-d174da0b372c in the collection funding
+2026-02-07 21:42:05.221 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:05.224 +02:00 [INF] New FundingModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:05.228 +02:00 [INF] Created audit trail with id 7e84a229-0b07-4439-b154-e733332ab9a3
+2026-02-07 21:42:05.229 +02:00 [INF] Published message of type: FundingModel
+2026-02-07 21:42:05.231 +02:00 [INF] Publishing to Rabbit MQ has completed for FundingModel
+2026-02-07 21:42:05.233 +02:00 [INF] [User Seeder] - User Model sarah.brown@student.uj.ac.za has been created.
+2026-02-07 21:42:05.242 +02:00 [INF] [User Seeder] - User with email michael.davis@student.uj.ac.za does not exist...
+2026-02-07 21:42:05.244 +02:00 [INF] [User Seeder] - Processing UAM for michael.davis@student.uj.ac.za... with password g*z@C(1$...
+2026-02-07 21:42:05.246 +02:00 [INF] Hashing password for new user: BlockiFinAid.Data.Models.UserAccessControl
+2026-02-07 21:42:05.324 +02:00 [INF] User Michael Davis has been registered
+2026-02-07 21:42:05.326 +02:00 [INF] [User Seeder] - UAM for michael.davis@student.uj.ac.za has been registered with role student
+2026-02-07 21:42:05.335 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:05.335 +02:00 [INF] Created BankAccountModel with id de243185-b6cd-42e3-8720-7cb363c0e5b2 in the collection bankAccounts
+2026-02-07 21:42:05.336 +02:00 [INF] New BankAccountModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:05.342 +02:00 [INF] Published message of type: BankAccountModel
+2026-02-07 21:42:05.344 +02:00 [INF] Created audit trail with id dd143e4b-11a1-40e9-8552-516721c7366f
+2026-02-07 21:42:05.344 +02:00 [INF] Publishing to Rabbit MQ has completed for BankAccountModel
+2026-02-07 21:42:05.349 +02:00 [INF] [User Seeder] - UserFunder Michael Davis bank account seeded successfully with studentNumber S5912462
+2026-02-07 21:42:05.355 +02:00 [INF] Created UserModel with id ac26a479-eb11-4b9a-9d33-9495b6f91b4a in the collection users
+2026-02-07 21:42:05.355 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:05.359 +02:00 [INF] New UserModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:05.361 +02:00 [INF] Created audit trail with id 2c99f69a-bc8f-4c5f-bce0-313b87016c51
+2026-02-07 21:42:05.363 +02:00 [INF] Published message of type: UserModel
+2026-02-07 21:42:05.366 +02:00 [INF] Publishing to Rabbit MQ has completed for UserModel
+2026-02-07 21:42:05.368 +02:00 [INF] [User Seeder] - User Michael Davis seeded with studentNumber S5912462
+2026-02-07 21:42:05.376 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:05.376 +02:00 [INF] Created FundingConditionsModel with id 7b8329d6-2cfe-4f31-9d83-479954140548 in the collection fundingConditions
+2026-02-07 21:42:05.378 +02:00 [INF] New FundingConditionsModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:05.384 +02:00 [INF] Published message of type: FundingConditionsModel
+2026-02-07 21:42:05.385 +02:00 [INF] Created audit trail with id 11fa93ed-a29a-407a-ace7-ff2c717f0225
+2026-02-07 21:42:05.385 +02:00 [INF] Publishing to Rabbit MQ has completed for FundingConditionsModel
+2026-02-07 21:42:05.390 +02:00 [INF] [User Seeder] - Funding conditions for michael.davis@student.uj.ac.za has been created.
+2026-02-07 21:42:05.397 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:05.397 +02:00 [INF] Created FundingModel with id 3c35eacd-a76e-433d-9c2b-720f81e06ed5 in the collection funding
+2026-02-07 21:42:05.399 +02:00 [INF] New FundingModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:05.404 +02:00 [INF] Published message of type: FundingModel
+2026-02-07 21:42:05.404 +02:00 [INF] Created audit trail with id a5a17be4-28f7-4adf-9bf3-7de4ee261a8e
+2026-02-07 21:42:05.405 +02:00 [INF] Publishing to Rabbit MQ has completed for FundingModel
+2026-02-07 21:42:05.409 +02:00 [INF] [User Seeder] - User Model michael.davis@student.uj.ac.za has been created.
+2026-02-07 21:42:05.415 +02:00 [INF] [User Seeder] - User with email olivia.wilson@student.uj.ac.za does not exist...
+2026-02-07 21:42:05.416 +02:00 [INF] [User Seeder] - Processing UAM for olivia.wilson@student.uj.ac.za... with password &aZvg^#q...
+2026-02-07 21:42:05.417 +02:00 [INF] Hashing password for new user: BlockiFinAid.Data.Models.UserAccessControl
+2026-02-07 21:42:05.491 +02:00 [INF] User Olivia Wilson has been registered
+2026-02-07 21:42:05.493 +02:00 [INF] [User Seeder] - UAM for olivia.wilson@student.uj.ac.za has been registered with role student
+2026-02-07 21:42:05.503 +02:00 [INF] Created BankAccountModel with id deb9d799-217c-4537-aa1d-89dd6f118351 in the collection bankAccounts
+2026-02-07 21:42:05.503 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:05.506 +02:00 [INF] New BankAccountModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:05.510 +02:00 [INF] Created audit trail with id b7bbba04-775d-4a51-93ab-c3a96b977606
+2026-02-07 21:42:05.510 +02:00 [INF] Published message of type: BankAccountModel
+2026-02-07 21:42:05.514 +02:00 [INF] Publishing to Rabbit MQ has completed for BankAccountModel
+2026-02-07 21:42:05.516 +02:00 [INF] [User Seeder] - UserFunder Olivia Wilson bank account seeded successfully with studentNumber S4474969
+2026-02-07 21:42:05.522 +02:00 [INF] Created UserModel with id 5b701d1f-93b9-4b20-a3dd-7538f522de4d in the collection users
+2026-02-07 21:42:05.522 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:05.525 +02:00 [INF] New UserModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:05.527 +02:00 [INF] Created audit trail with id 72c17559-0c43-466b-b3cd-0169d7f3a4d4
+2026-02-07 21:42:05.530 +02:00 [INF] Published message of type: UserModel
+2026-02-07 21:42:05.532 +02:00 [INF] Publishing to Rabbit MQ has completed for UserModel
+2026-02-07 21:42:05.533 +02:00 [INF] [User Seeder] - User Olivia Wilson seeded with studentNumber S4474969
+2026-02-07 21:42:05.539 +02:00 [INF] Created FundingConditionsModel with id 63e1ff00-c5cb-433a-832f-166e306f880f in the collection fundingConditions
+2026-02-07 21:42:05.539 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:05.542 +02:00 [INF] New FundingConditionsModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:05.544 +02:00 [INF] Created audit trail with id 6885f23f-510b-415b-8d71-4eaebfbab5b3
+2026-02-07 21:42:05.547 +02:00 [INF] Published message of type: FundingConditionsModel
+2026-02-07 21:42:05.549 +02:00 [INF] Publishing to Rabbit MQ has completed for FundingConditionsModel
+2026-02-07 21:42:05.550 +02:00 [INF] [User Seeder] - Funding conditions for olivia.wilson@student.uj.ac.za has been created.
+2026-02-07 21:42:05.558 +02:00 [INF] Created FundingModel with id 256f5319-8bad-4cc9-9073-91bf60ed7356 in the collection funding
+2026-02-07 21:42:05.558 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:42:05.561 +02:00 [INF] New FundingModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:42:05.564 +02:00 [INF] Created audit trail with id 67ac58c6-0d5e-4404-95a6-0f256044f5e5
+2026-02-07 21:42:05.566 +02:00 [INF] Published message of type: FundingModel
+2026-02-07 21:42:05.567 +02:00 [INF] Publishing to Rabbit MQ has completed for FundingModel
+2026-02-07 21:42:05.568 +02:00 [INF] [User Seeder] - User Model olivia.wilson@student.uj.ac.za has been created.
+2026-02-07 21:42:05.993 +02:00 [INF] Consuming funding model for Funder National Research Foundation from the queue: 
+2026-02-07 21:42:05.994 +02:00 [INF] Looking for funder: National Research Foundation with id: c7c9ed3f-cfb8-4c00-8ef3-ba8a72121e38 in the smart contract
+2026-02-07 21:42:06.040 +02:00 [INF] Adding data from db to smart contract in real-time for funder model complete with status: 0x1991acbd22519341bd9c6c969348be6e07c21a96400bcb7f83f233b3d621035b
+2026-02-07 21:42:06.903 +02:00 [INF] [Conditions Consumer] - Consuming funding conditions model with id ada64fc1-d0ca-4dca-acf8-2dcd3b473ded from the queue: 
+2026-02-07 21:42:06.954 +02:00 [INF] [Conditions Consumer] - Adding data from db to smart contract in real-time for funding conditions model complete with status: BlockiFinAid.Data.Responses.SmartContractResponse`1[System.String]
+2026-02-07 21:42:07.060 +02:00 [INF] Consuming funding model for Funder Canon Collins Trust from the queue: 
+2026-02-07 21:42:07.062 +02:00 [INF] Looking for funder: Canon Collins Trust with id: 36d0ebe2-b479-4e83-b2cf-19c146d7e7b2 in the smart contract
+2026-02-07 21:42:07.096 +02:00 [INF] Adding data from db to smart contract in real-time for funder model complete with status: 0x711f75125f78142a57dff3bd265b3df96ee0a205bb9e798864c8cc6d6da66927
+2026-02-07 21:42:07.962 +02:00 [INF] [Funding Consumer] - Consuming funding model for student d382afdc-c610-40c4-8b00-f796f9eaa75a from the queue: 
+2026-02-07 21:42:07.996 +02:00 [INF] [Funding Consumer]- Adding data from db to smart contract in real-time for funding model complete with status: BlockiFinAid.Data.Responses.SmartContractResponse`1[BlockiFinAid.Services.SmartContracts.Funding.FundingOutputDto]
+2026-02-07 21:42:08.117 +02:00 [INF] Consuming funding model for Funder Allan Gray Orbis Foundation from the queue: 
+2026-02-07 21:42:08.119 +02:00 [INF] Looking for funder: Allan Gray Orbis Foundation with id: 9b8c6d8e-362f-45a5-9e48-4fbb8149f145 in the smart contract
+2026-02-07 21:42:08.160 +02:00 [INF] Adding data from db to smart contract in real-time for funder model complete with status: 0xa31f8390b55bd1a7a563a70a2a8b9de2d8321db622e3e8be4cedcf2642bc370a
+2026-02-07 21:42:08.629 +02:00 [INF] [Bank Account Consumer] - Adding data from db to smart contract in real-time for bankAccount model is complete with status: BlockiFinAid.Data.Responses.SmartContractResponse`1[System.String]
+2026-02-07 21:42:08.636 +02:00 [INF] [Bank Account Consumer] - BankAccountNumber: 36187345 has been added to the database and retrieved in real-time. Queue for Smart contract addition
+2026-02-07 21:42:09.169 +02:00 [INF] Consuming funding model for Funder Sector Education and Training Authorities from the queue: 
+2026-02-07 21:42:09.170 +02:00 [INF] Looking for funder: Sector Education and Training Authorities with id: df21ea88-42a6-4008-a535-52c8e8dab1e0 in the smart contract
+2026-02-07 21:42:09.198 +02:00 [INF] Adding data from db to smart contract in real-time for funder model complete with status: 0xd077706462bd9bf78eb2c5d1de401a311e294d8ada2c2f752cb17790f62ffe85
+2026-02-07 21:42:09.620 +02:00 [INF] [User Consumer] - Consuming the following user S0714879 from the queue: 
+2026-02-07 21:42:09.643 +02:00 [INF] [User Consumer] - User S0714879 added to the smart contract for users with status: BlockiFinAid.Data.Responses.ServiceResponse`1[System.String]
+2026-02-07 21:42:09.976 +02:00 [INF] [Conditions Consumer] - Consuming funding conditions model with id 7ceafa13-e79f-4a14-8e83-66c605dfe59a from the queue: 
+2026-02-07 21:42:09.996 +02:00 [INF] [Conditions Consumer] - Adding data from db to smart contract in real-time for funding conditions model complete with status: BlockiFinAid.Data.Responses.SmartContractResponse`1[System.String]
+2026-02-07 21:42:12.013 +02:00 [INF] [Funding Consumer] - Consuming funding model for student cc727f02-65d6-438f-b339-3bb2cc5469e4 from the queue: 
+2026-02-07 21:42:12.046 +02:00 [INF] [Funding Consumer]- Adding data from db to smart contract in real-time for funding model complete with status: BlockiFinAid.Data.Responses.SmartContractResponse`1[BlockiFinAid.Services.SmartContracts.Funding.FundingOutputDto]
+2026-02-07 21:42:13.011 +02:00 [INF] [Conditions Consumer] - Consuming funding conditions model with id ddce5a43-8078-4a23-89a7-a5c0c37c24d7 from the queue: 
+2026-02-07 21:42:13.028 +02:00 [INF] [Conditions Consumer] - Adding data from db to smart contract in real-time for funding conditions model complete with status: BlockiFinAid.Data.Responses.SmartContractResponse`1[System.String]
+2026-02-07 21:42:13.670 +02:00 [INF] [Bank Account Consumer] - Adding data from db to smart contract in real-time for bankAccount model is complete with status: BlockiFinAid.Data.Responses.SmartContractResponse`1[System.String]
+2026-02-07 21:42:13.680 +02:00 [INF] [Bank Account Consumer] - BankAccountNumber: 39023825 has been added to the database and retrieved in real-time. Queue for Smart contract addition
+2026-02-07 21:42:15.651 +02:00 [INF] [User Consumer] - Consuming the following user S5470099 from the queue: 
+2026-02-07 21:42:15.666 +02:00 [INF] [User Consumer] - User S5470099 added to the smart contract for users with status: BlockiFinAid.Data.Responses.ServiceResponse`1[System.String]
+2026-02-07 21:42:16.039 +02:00 [INF] [Conditions Consumer] - Consuming funding conditions model with id 659e73b6-af0c-4e4c-8dda-340c30d174ee from the queue: 
+2026-02-07 21:42:16.057 +02:00 [INF] [Conditions Consumer] - Adding data from db to smart contract in real-time for funding conditions model complete with status: BlockiFinAid.Data.Responses.SmartContractResponse`1[System.String]
+2026-02-07 21:42:16.062 +02:00 [INF] [Funding Consumer] - Consuming funding model for student b8f69da8-3229-41a4-967c-346c8884fea1 from the queue: 
+2026-02-07 21:42:16.090 +02:00 [INF] [Funding Consumer]- Adding data from db to smart contract in real-time for funding model complete with status: BlockiFinAid.Data.Responses.SmartContractResponse`1[BlockiFinAid.Services.SmartContracts.Funding.FundingOutputDto]
+2026-02-07 21:42:18.711 +02:00 [INF] [Bank Account Consumer] - Adding data from db to smart contract in real-time for bankAccount model is complete with status: BlockiFinAid.Data.Responses.SmartContractResponse`1[System.String]
+2026-02-07 21:42:18.716 +02:00 [INF] [Bank Account Consumer] - BankAccountNumber: 92751527 has been added to the database and retrieved in real-time. Queue for Smart contract addition
+2026-02-07 21:42:19.069 +02:00 [INF] [Conditions Consumer] - Consuming funding conditions model with id f51ded87-a966-4ac1-907c-32ea14b8c7fb from the queue: 
+2026-02-07 21:42:19.086 +02:00 [INF] [Conditions Consumer] - Adding data from db to smart contract in real-time for funding conditions model complete with status: BlockiFinAid.Data.Responses.SmartContractResponse`1[System.String]
+2026-02-07 21:42:20.106 +02:00 [INF] [Funding Consumer] - Consuming funding model for student 68328292-56c1-480d-85cb-562b3becc5e8 from the queue: 
+2026-02-07 21:42:20.131 +02:00 [INF] [Funding Consumer]- Adding data from db to smart contract in real-time for funding model complete with status: BlockiFinAid.Data.Responses.SmartContractResponse`1[BlockiFinAid.Services.SmartContracts.Funding.FundingOutputDto]
+2026-02-07 21:42:21.687 +02:00 [INF] [User Consumer] - Consuming the following user S7261146 from the queue: 
+2026-02-07 21:42:21.708 +02:00 [INF] [User Consumer] - User S7261146 added to the smart contract for users with status: BlockiFinAid.Data.Responses.ServiceResponse`1[System.String]
+2026-02-07 21:42:22.103 +02:00 [INF] [Conditions Consumer] - Consuming funding conditions model with id 5a9b7330-6a69-46cf-825a-c6b09e8e2252 from the queue: 
+2026-02-07 21:42:22.167 +02:00 [INF] [Conditions Consumer] - Adding data from db to smart contract in real-time for funding conditions model complete with status: BlockiFinAid.Data.Responses.SmartContractResponse`1[System.String]
+2026-02-07 21:42:23.736 +02:00 [INF] [Bank Account Consumer] - Adding data from db to smart contract in real-time for bankAccount model is complete with status: BlockiFinAid.Data.Responses.SmartContractResponse`1[System.String]
+2026-02-07 21:42:23.740 +02:00 [INF] [Bank Account Consumer] - BankAccountNumber: 56515098 has been added to the database and retrieved in real-time. Queue for Smart contract addition
+2026-02-07 21:42:24.143 +02:00 [INF] [Funding Consumer] - Consuming funding model for student 82179175-c762-4a57-94d0-94520dff652f from the queue: 
+2026-02-07 21:42:24.165 +02:00 [INF] [Funding Consumer]- Adding data from db to smart contract in real-time for funding model complete with status: BlockiFinAid.Data.Responses.SmartContractResponse`1[BlockiFinAid.Services.SmartContracts.Funding.FundingOutputDto]
+2026-02-07 21:42:25.186 +02:00 [INF] [Conditions Consumer] - Consuming funding conditions model with id 0a4d7b58-fb66-4dcf-adc8-2b888ee3a5b5 from the queue: 
+2026-02-07 21:42:25.205 +02:00 [INF] [Conditions Consumer] - Adding data from db to smart contract in real-time for funding conditions model complete with status: BlockiFinAid.Data.Responses.SmartContractResponse`1[System.String]
+2026-02-07 21:42:27.724 +02:00 [INF] [User Consumer] - Consuming the following user S5273094 from the queue: 
+2026-02-07 21:42:27.739 +02:00 [INF] [User Consumer] - User S5273094 added to the smart contract for users with status: BlockiFinAid.Data.Responses.ServiceResponse`1[System.String]
+2026-02-07 21:42:28.176 +02:00 [INF] [Funding Consumer] - Consuming funding model for student 8a86e66c-8390-4ad2-8274-68bcda9c59d0 from the queue: 
+2026-02-07 21:42:28.196 +02:00 [INF] [Funding Consumer]- Adding data from db to smart contract in real-time for funding model complete with status: BlockiFinAid.Data.Responses.SmartContractResponse`1[BlockiFinAid.Services.SmartContracts.Funding.FundingOutputDto]
+2026-02-07 21:42:28.222 +02:00 [INF] [Conditions Consumer] - Consuming funding conditions model with id 209c0b65-027f-4e46-9d5f-508b8c18fb82 from the queue: 
+2026-02-07 21:42:28.246 +02:00 [INF] [Conditions Consumer] - Adding data from db to smart contract in real-time for funding conditions model complete with status: BlockiFinAid.Data.Responses.SmartContractResponse`1[System.String]
+2026-02-07 21:42:28.764 +02:00 [INF] [Bank Account Consumer] - Adding data from db to smart contract in real-time for bankAccount model is complete with status: BlockiFinAid.Data.Responses.SmartContractResponse`1[System.String]
+2026-02-07 21:42:28.768 +02:00 [INF] [Bank Account Consumer] - BankAccountNumber: 53297264 has been added to the database and retrieved in real-time. Queue for Smart contract addition
+2026-02-07 21:42:31.255 +02:00 [INF] [Conditions Consumer] - Consuming funding conditions model with id 7b8329d6-2cfe-4f31-9d83-479954140548 from the queue: 
+2026-02-07 21:42:31.274 +02:00 [INF] [Conditions Consumer] - Adding data from db to smart contract in real-time for funding conditions model complete with status: BlockiFinAid.Data.Responses.SmartContractResponse`1[System.String]
+2026-02-07 21:42:32.202 +02:00 [INF] [Funding Consumer] - Consuming funding model for student 928a615b-6329-493a-924a-7d7ec8258b90 from the queue: 
+2026-02-07 21:42:32.232 +02:00 [INF] [Funding Consumer]- Adding data from db to smart contract in real-time for funding model complete with status: BlockiFinAid.Data.Responses.SmartContractResponse`1[BlockiFinAid.Services.SmartContracts.Funding.FundingOutputDto]
+2026-02-07 21:42:33.757 +02:00 [INF] [User Consumer] - Consuming the following user S6202057 from the queue: 
+2026-02-07 21:42:33.778 +02:00 [INF] [User Consumer] - User S6202057 added to the smart contract for users with status: BlockiFinAid.Data.Responses.ServiceResponse`1[System.String]
+2026-02-07 21:42:33.797 +02:00 [INF] [Bank Account Consumer] - Adding data from db to smart contract in real-time for bankAccount model is complete with status: BlockiFinAid.Data.Responses.SmartContractResponse`1[System.String]
+2026-02-07 21:42:33.804 +02:00 [INF] [Bank Account Consumer] - BankAccountNumber: 51772479 has been added to the database and retrieved in real-time. Queue for Smart contract addition
+2026-02-07 21:42:34.281 +02:00 [INF] [Conditions Consumer] - Consuming funding conditions model with id 63e1ff00-c5cb-433a-832f-166e306f880f from the queue: 
+2026-02-07 21:42:34.309 +02:00 [INF] [Conditions Consumer] - Adding data from db to smart contract in real-time for funding conditions model complete with status: BlockiFinAid.Data.Responses.SmartContractResponse`1[System.String]
+2026-02-07 21:42:36.243 +02:00 [INF] [Funding Consumer] - Consuming funding model for student bb71a6f9-3ccd-4803-ae7f-930ad172d777 from the queue: 
+2026-02-07 21:42:36.262 +02:00 [INF] [Funding Consumer]- Adding data from db to smart contract in real-time for funding model complete with status: BlockiFinAid.Data.Responses.SmartContractResponse`1[BlockiFinAid.Services.SmartContracts.Funding.FundingOutputDto]
+2026-02-07 21:42:38.836 +02:00 [INF] [Bank Account Consumer] - Adding data from db to smart contract in real-time for bankAccount model is complete with status: BlockiFinAid.Data.Responses.SmartContractResponse`1[System.String]
+2026-02-07 21:42:38.840 +02:00 [INF] [Bank Account Consumer] - BankAccountNumber: 56680968 has been added to the database and retrieved in real-time. Queue for Smart contract addition
+2026-02-07 21:42:39.787 +02:00 [INF] [User Consumer] - Consuming the following user S6653432 from the queue: 
+2026-02-07 21:42:39.804 +02:00 [INF] [User Consumer] - User S6653432 added to the smart contract for users with status: BlockiFinAid.Data.Responses.ServiceResponse`1[System.String]
+2026-02-07 21:42:40.269 +02:00 [INF] [Funding Consumer] - Consuming funding model for student ac26a479-eb11-4b9a-9d33-9495b6f91b4a from the queue: 
+2026-02-07 21:42:40.286 +02:00 [INF] [Funding Consumer]- Adding data from db to smart contract in real-time for funding model complete with status: BlockiFinAid.Data.Responses.SmartContractResponse`1[BlockiFinAid.Services.SmartContracts.Funding.FundingOutputDto]
+2026-02-07 21:42:43.860 +02:00 [INF] [Bank Account Consumer] - Adding data from db to smart contract in real-time for bankAccount model is complete with status: BlockiFinAid.Data.Responses.SmartContractResponse`1[System.String]
+2026-02-07 21:42:43.864 +02:00 [INF] [Bank Account Consumer] - BankAccountNumber: 39229569 has been added to the database and retrieved in real-time. Queue for Smart contract addition
+2026-02-07 21:42:44.292 +02:00 [INF] [Funding Consumer] - Consuming funding model for student 5b701d1f-93b9-4b20-a3dd-7538f522de4d from the queue: 
+2026-02-07 21:42:44.323 +02:00 [INF] [Funding Consumer]- Adding data from db to smart contract in real-time for funding model complete with status: BlockiFinAid.Data.Responses.SmartContractResponse`1[BlockiFinAid.Services.SmartContracts.Funding.FundingOutputDto]
+2026-02-07 21:42:45.821 +02:00 [INF] [User Consumer] - Consuming the following user S1813933 from the queue: 
+2026-02-07 21:42:45.837 +02:00 [INF] [User Consumer] - User S1813933 added to the smart contract for users with status: BlockiFinAid.Data.Responses.ServiceResponse`1[System.String]
+2026-02-07 21:42:48.884 +02:00 [INF] [Bank Account Consumer] - Adding data from db to smart contract in real-time for bankAccount model is complete with status: BlockiFinAid.Data.Responses.SmartContractResponse`1[System.String]
+2026-02-07 21:42:48.887 +02:00 [INF] [Bank Account Consumer] - BankAccountNumber: 46501526 has been added to the database and retrieved in real-time. Queue for Smart contract addition
+2026-02-07 21:42:51.844 +02:00 [INF] [User Consumer] - Consuming the following user S6773699 from the queue: 
+2026-02-07 21:42:51.860 +02:00 [INF] [User Consumer] - User S6773699 added to the smart contract for users with status: BlockiFinAid.Data.Responses.ServiceResponse`1[System.String]
+2026-02-07 21:42:53.912 +02:00 [INF] [Bank Account Consumer] - Adding data from db to smart contract in real-time for bankAccount model is complete with status: BlockiFinAid.Data.Responses.SmartContractResponse`1[System.String]
+2026-02-07 21:42:53.917 +02:00 [INF] [Bank Account Consumer] - BankAccountNumber: 99196203 has been added to the database and retrieved in real-time. Queue for Smart contract addition
+2026-02-07 21:42:57.875 +02:00 [INF] [User Consumer] - Consuming the following user S2480063 from the queue: 
+2026-02-07 21:42:57.893 +02:00 [INF] [User Consumer] - User S2480063 added to the smart contract for users with status: BlockiFinAid.Data.Responses.ServiceResponse`1[System.String]
+2026-02-07 21:42:58.946 +02:00 [INF] [Bank Account Consumer] - Adding data from db to smart contract in real-time for bankAccount model is complete with status: BlockiFinAid.Data.Responses.SmartContractResponse`1[System.String]
+2026-02-07 21:42:58.952 +02:00 [INF] [Bank Account Consumer] - BankAccountNumber: 42874337 has been added to the database and retrieved in real-time. Queue for Smart contract addition
+2026-02-07 21:43:03.041 +02:00 [INF] [Payment Initiator] - Processing payments for National Student Financial Aid Scheme on "2026-02-09T00:00:00.0000000"
+2026-02-07 21:43:03.092 +02:00 [INF] Created PaymentCheckerModel with id 035f4918-22b4-4a54-bb94-353fa3ab444d in the collection paymentChecker
+2026-02-07 21:43:03.097 +02:00 [INF] Created audit trail with id 9e7e4f51-5a1d-4dd7-8030-e58b654b0c1c
+2026-02-07 21:43:03.107 +02:00 [INF] [Payment Initiator] - Processing payments for National Research Foundation on "2026-02-09T00:00:00.0000000"
+2026-02-07 21:43:03.128 +02:00 [INF] Created PaymentCheckerModel with id 2869a2f9-9b7c-4994-b83b-3cd72c79522e in the collection paymentChecker
+2026-02-07 21:43:03.133 +02:00 [INF] Created audit trail with id fdd33716-9c7b-4ca5-ac84-d5d58bab3861
+2026-02-07 21:43:03.137 +02:00 [INF] [Payment Initiator] - Payment date "2026-02-08T00:00:00.0000000" for Canon Collins Trust is not "2026-02-09T00:00:00.0000000Z"
+2026-02-07 21:43:03.139 +02:00 [INF] [Payment Initiator] - Payment date "2026-02-24T00:00:00.0000000" for Allan Gray Orbis Foundation is not "2026-02-09T00:00:00.0000000Z"
+2026-02-07 21:43:03.142 +02:00 [INF] [Payment Initiator] - Payment date "2026-02-24T00:00:00.0000000" for Sector Education and Training Authorities is not "2026-02-09T00:00:00.0000000Z"
+2026-02-07 21:43:03.905 +02:00 [INF] [User Consumer] - Consuming the following user S8819772 from the queue: 
+2026-02-07 21:43:03.923 +02:00 [INF] [User Consumer] - User S8819772 added to the smart contract for users with status: BlockiFinAid.Data.Responses.ServiceResponse`1[System.String]
+2026-02-07 21:43:03.979 +02:00 [INF] [Bank Account Consumer] - Adding data from db to smart contract in real-time for bankAccount model is complete with status: BlockiFinAid.Data.Responses.SmartContractResponse`1[System.String]
+2026-02-07 21:43:03.983 +02:00 [INF] [Bank Account Consumer] - BankAccountNumber: 82183852 has been added to the database and retrieved in real-time. Queue for Smart contract addition
+2026-02-07 21:43:09.004 +02:00 [INF] [Bank Account Consumer] - Adding data from db to smart contract in real-time for bankAccount model is complete with status: BlockiFinAid.Data.Responses.SmartContractResponse`1[System.String]
+2026-02-07 21:43:09.008 +02:00 [INF] [Bank Account Consumer] - BankAccountNumber: 42626174 has been added to the database and retrieved in real-time. Queue for Smart contract addition
+2026-02-07 21:43:09.940 +02:00 [INF] [User Consumer] - Consuming the following user S9629323 from the queue: 
+2026-02-07 21:43:09.959 +02:00 [INF] [User Consumer] - User S9629323 added to the smart contract for users with status: BlockiFinAid.Data.Responses.ServiceResponse`1[System.String]
+2026-02-07 21:43:14.028 +02:00 [INF] [Bank Account Consumer] - Adding data from db to smart contract in real-time for bankAccount model is complete with status: BlockiFinAid.Data.Responses.SmartContractResponse`1[System.String]
+2026-02-07 21:43:15.963 +02:00 [INF] [User Consumer] - Consuming the following user S5074071 from the queue: 
+2026-02-07 21:43:15.980 +02:00 [INF] [User Consumer] - User S5074071 added to the smart contract for users with status: BlockiFinAid.Data.Responses.ServiceResponse`1[System.String]
+2026-02-07 21:43:21.988 +02:00 [INF] [User Consumer] - Consuming the following user S5912462 from the queue: 
+2026-02-07 21:43:22.023 +02:00 [INF] [User Consumer] - User S5912462 added to the smart contract for users with status: BlockiFinAid.Data.Responses.ServiceResponse`1[System.String]
+2026-02-07 21:43:28.033 +02:00 [INF] [User Consumer] - Consuming the following user S4474969 from the queue: 
+2026-02-07 21:43:28.053 +02:00 [INF] [User Consumer] - User S4474969 added to the smart contract for users with status: BlockiFinAid.Data.Responses.ServiceResponse`1[System.String]
+2026-02-07 21:47:02.924 +02:00 [INF] Usage Telemetry: {"id":"0c530000-ff4a-163f-8849-08de6680f74c","created":"2026-02-07T21:42:02.4025006\u002B02:00","host":{"framework_version":"9.0.12","mass_transit_version":"8.5.1.0","operating_system_version":"Microsoft Windows NT 10.0.26200.0","time_zone_info":"(UTC\u002B02:00) Harare, Pretoria","commit_hash":"6a2f4c07dfe21c14ed78299d6d4b4f4cf57bb86c"},"bus":[{"created":"2026-02-07T21:42:02.4088893\u002B02:00","configured":"2026-02-07T21:42:02.6349123\u002B02:00","started":"2026-02-07T21:42:02.8927140\u002B02:00","name":"IBus","endpoints":[{"name":"user-db","type":"RabbitMQ","prefetch_count":1,"consumer_count":1,"message_count":1},{"name":"bank-account-db","type":"RabbitMQ","prefetch_count":1,"consumer_count":1,"message_count":1},{"name":"payment-event","type":"RabbitMQ","prefetch_count":1,"consumer_count":1,"message_count":1},{"name":"funding-db","type":"RabbitMQ","prefetch_count":1,"consumer_count":1,"message_count":1},{"name":"funding-conditions-db","type":"RabbitMQ","prefetch_count":1,"consumer_count":1,"message_count":1},{"name":"funder-db","type":"RabbitMQ","prefetch_count":1,"consumer_count":1,"message_count":1},{"name":"payment-db","type":"RabbitMQ","prefetch_count":1,"consumer_count":1,"message_count":1},{"name":"_bus_","type":"RabbitMQ","prefetch_count":32}]}]}
+2026-02-07 21:48:16.601 +02:00 [INF] MongoDB Database Background Service for Data Streaming is stopping.
+2026-02-07 21:48:16.667 +02:00 [INF] Bus stopped: "rabbitmq://localhost/"
+2026-02-07 21:48:23.535 +02:00 [INF] Configured endpoint user-db, Consumer: BlockiFinAid.Services.Messaging.UserDbConsumer
+2026-02-07 21:48:23.593 +02:00 [INF] Configured endpoint bank-account-db, Consumer: BlockiFinAid.Services.Messaging.BankAccountDbConsumer
+2026-02-07 21:48:23.598 +02:00 [INF] Configured endpoint payment-event, Consumer: BlockiFinAid.Services.Messaging.PaymentEventConsumer
+2026-02-07 21:48:23.602 +02:00 [INF] Configured endpoint funding-db, Consumer: BlockiFinAid.Services.Messaging.FundingDbConsumer
+2026-02-07 21:48:23.606 +02:00 [INF] Configured endpoint funding-conditions-db, Consumer: BlockiFinAid.Services.Messaging.FundingConditionsDbConsumer
+2026-02-07 21:48:23.612 +02:00 [INF] Configured endpoint funder-db, Consumer: BlockiFinAid.Services.Messaging.FunderDbConsumer
+2026-02-07 21:48:23.617 +02:00 [INF] Configured endpoint payment-db, Consumer: BlockiFinAid.Services.Messaging.PaymentDbConsumer
+2026-02-07 21:48:23.959 +02:00 [INF] Seeding users...
+2026-02-07 21:48:23.962 +02:00 [INF] Seeding api admin...
+2026-02-07 21:48:23.971 +02:00 [INF] Hashing password for new user: BlockiFinAid.Data.Models.UserAccessControl
+2026-02-07 21:48:23.995 +02:00 [INF] Bus started: "rabbitmq://localhost/"
+2026-02-07 21:48:24.111 +02:00 [INF] MongoDB Database Background Service for Data Streaming is starting.
+2026-02-07 21:48:24.116 +02:00 [INF] Starting to watch for new inserts in FundingModel.
+2026-02-07 21:48:24.116 +02:00 [INF] Starting to watch for new inserts in BankAccountModel.
+2026-02-07 21:48:24.116 +02:00 [INF] Starting to watch for new inserts in UserModel.
+2026-02-07 21:48:24.116 +02:00 [INF] Starting to watch for new inserts in FundingConditionsModel.
+2026-02-07 21:48:24.116 +02:00 [INF] Starting to watch for new inserts in FunderModel.
+2026-02-07 21:48:24.116 +02:00 [INF] Starting to watch for new inserts in PaymentModel.
+2026-02-07 21:48:24.221 +02:00 [INF] User api-admin has been registered
+2026-02-07 21:48:24.274 +02:00 [INF] Reading funders from C:\Users\user\Documents\External_Projects\BlockiFinAid\Backend.Core\BlockiFinAid\Data/DataSeeds/funders.json
+2026-02-07 21:48:24.358 +02:00 [INF] Found 5 items in the JSON file. Starting to seed...
+2026-02-07 21:48:24.372 +02:00 [INF] Funder National Student Financial Aid Scheme already exists. Ignoring it.
+2026-02-07 21:48:24.376 +02:00 [INF] Funder National Research Foundation already exists. Ignoring it.
+2026-02-07 21:48:24.379 +02:00 [INF] Funder Canon Collins Trust already exists. Ignoring it.
+2026-02-07 21:48:24.384 +02:00 [INF] Funder Allan Gray Orbis Foundation already exists. Ignoring it.
+2026-02-07 21:48:24.387 +02:00 [INF] Funder Sector Education and Training Authorities already exists. Ignoring it.
+2026-02-07 21:48:24.392 +02:00 [INF] Reading users from Json file C:\Users\user\Documents\External_Projects\BlockiFinAid\Backend.Core\BlockiFinAid\Data/DataSeeds/funderUsers.json
+2026-02-07 21:48:24.398 +02:00 [INF] Found 4 users in the JSON file. Starting to seed...
+2026-02-07 21:48:24.410 +02:00 [ERR] UserFunder National Student Financial Aid Scheme already exists. Skipping user seeding
+2026-02-07 21:48:24.415 +02:00 [ERR] UserFunder National Research Foundation already exists. Skipping user seeding
+2026-02-07 21:48:24.420 +02:00 [ERR] UserFunder Allan Gray Orbis Foundation already exists. Skipping user seeding
+2026-02-07 21:48:24.425 +02:00 [ERR] UserFunder Sector Education and Training Authorities already exists. Skipping user seeding
+2026-02-07 21:48:24.428 +02:00 [INF] [User Seeder] - Reading users from Json file C:\Users\user\Documents\External_Projects\BlockiFinAid\Backend.Core\BlockiFinAid\Data/DataSeeds/users.json
+2026-02-07 21:48:24.430 +02:00 [INF] [User Seeder] - Found 11 users in the JSON file. Starting to seed...
+2026-02-07 21:48:24.437 +02:00 [INF] [User Seeder] - User with email jane.smith@uj.ac.za already exists...
+2026-02-07 21:48:24.444 +02:00 [INF] [User Seeder] - User with email john.doe@uj.ac.za already exists...
+2026-02-07 21:48:24.449 +02:00 [INF] [User Seeder] - User with email jane.smith@uj.ac.za already exists...
+2026-02-07 21:48:24.455 +02:00 [INF] [User Seeder] - User with email peter.jones@student.uj.ac.za already exists...
+2026-02-07 21:48:24.463 +02:00 [INF] [User Seeder] - User with email mary.williams@student.uj.ac.za already exists...
+2026-02-07 21:48:24.469 +02:00 [INF] [User Seeder] - User with email david.chen@student.uj.ac.za already exists...
+2026-02-07 21:48:24.475 +02:00 [INF] [User Seeder] - User with email emily.white@student.uj.ac.za already exists...
+2026-02-07 21:48:24.480 +02:00 [INF] [User Seeder] - User with email chris.lee@student.uj.ac.za already exists...
+2026-02-07 21:48:24.486 +02:00 [INF] [User Seeder] - User with email sarah.brown@student.uj.ac.za already exists...
+2026-02-07 21:48:24.494 +02:00 [INF] [User Seeder] - User with email michael.davis@student.uj.ac.za already exists...
+2026-02-07 21:48:24.501 +02:00 [INF] [User Seeder] - User with email olivia.wilson@student.uj.ac.za already exists...
+2026-02-07 21:49:24.331 +02:00 [INF] [Payment Initiator] - Processing payments for National Student Financial Aid Scheme on "2026-02-09T00:00:00.0000000"
+2026-02-07 21:49:24.426 +02:00 [INF] Created PaymentModel with id 0494e6e9-ed9e-4851-b573-488c97be4049 in the collection payments
+2026-02-07 21:49:24.427 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:49:24.435 +02:00 [INF] New PaymentModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:49:24.436 +02:00 [INF] Created audit trail with id d3ea931e-4142-4553-ae8e-a1f0984c7fec
+2026-02-07 21:49:24.607 +02:00 [INF] Published message of type: PaymentModel
+2026-02-07 21:49:24.610 +02:00 [INF] Publishing to Rabbit MQ has completed for PaymentModel
+2026-02-07 21:49:24.658 +02:00 [INF] Created PaymentModel with id 3854d856-39a6-4eea-8db5-fb48ef49d6fa in the collection payments
+2026-02-07 21:49:24.658 +02:00 [INF] Found a change in the stream.
+2026-02-07 21:49:24.663 +02:00 [INF] New PaymentModel entry found. Publishing to Rabbit MQ.
+2026-02-07 21:49:24.668 +02:00 [INF] Created audit trail with id 6bba43c7-ad5b-4ab9-94bd-285b691e2b4a
+2026-02-07 21:49:24.670 +02:00 [INF] Published message of type: PaymentModel
+2026-02-07 21:49:24.673 +02:00 [INF] Publishing to Rabbit MQ has completed for PaymentModel
+2026-02-07 21:49:24.723 +02:00 [INF] Created PaymentCheckerModel with id c7b3119b-af84-46fb-9432-666020b2d39c in the collection paymentChecker
+2026-02-07 21:49:24.732 +02:00 [INF] Created audit trail with id f9f59f0a-6575-43a1-9fab-4915080f97a9
+2026-02-07 21:49:24.741 +02:00 [INF] [Payment Initiator] - Processing payments for National Research Foundation on "2026-02-09T00:00:00.0000000"
+2026-02-07 21:49:24.773 +02:00 [INF] Created PaymentCheckerModel with id 8fe31599-723e-4d10-be41-976347a4101d in the collection paymentChecker
+2026-02-07 21:49:24.778 +02:00 [INF] Created audit trail with id 0ef0cfe8-77d0-41d8-b7ac-bf2783866cf4
+2026-02-07 21:49:24.784 +02:00 [INF] [Payment Initiator] - Payment date "2026-02-08T00:00:00.0000000" for Canon Collins Trust is not "2026-02-09T00:00:00.0000000Z"
+2026-02-07 21:49:24.788 +02:00 [INF] [Payment Initiator] - Payment date "2026-02-24T00:00:00.0000000" for Allan Gray Orbis Foundation is not "2026-02-09T00:00:00.0000000Z"
+2026-02-07 21:49:24.791 +02:00 [INF] [Payment Initiator] - Payment date "2026-02-24T00:00:00.0000000" for Sector Education and Training Authorities is not "2026-02-09T00:00:00.0000000Z"
+2026-02-07 21:49:26.740 +02:00 [INF] [Payment Consumer] - Consuming payment from the queue 
+2026-02-07 21:49:26.778 +02:00 [INF] No records found for PaymentModel with id 00000000-0000-0000-0000-000000000000
+2026-02-07 21:49:26.827 +02:00 [INF] [PaymentContract] receipt from the contract with blockhash: 0xc33168a479f3e29ab072a08b650af5e8a922740a6b24ce106121d6d30795bf81
+2026-02-07 21:49:26.829 +02:00 [INF] [Payment Consumer] - Payment  added to the smart contract with status: 0xc33168a479f3e29ab072a08b650af5e8a922740a6b24ce106121d6d30795bf81
+2026-02-07 21:49:28.884 +02:00 [INF] [Payment Consumer] - Consuming payment from the queue 
+2026-02-07 21:49:28.934 +02:00 [INF] No records found for PaymentModel with id 00000000-0000-0000-0000-000000000000
+2026-02-07 21:49:28.971 +02:00 [INF] [PaymentContract] receipt from the contract with blockhash: 0xefb52475212aa9a3e0ef19375087a9c809b109fdb9c742553c7c3bac2f48b400
+2026-02-07 21:49:28.973 +02:00 [INF] [Payment Consumer] - Payment  added to the smart contract with status: 0xefb52475212aa9a3e0ef19375087a9c809b109fdb9c742553c7c3bac2f48b400
+2026-02-07 21:53:24.027 +02:00 [INF] Usage Telemetry: {"id":"c8260000-ff4a-163f-845e-08de6681da6d","created":"2026-02-07T21:48:23.4614690\u002B02:00","host":{"framework_version":"9.0.12","mass_transit_version":"8.5.1.0","operating_system_version":"Microsoft Windows NT 10.0.26200.0","time_zone_info":"(UTC\u002B02:00) Harare, Pretoria","commit_hash":"6a2f4c07dfe21c14ed78299d6d4b4f4cf57bb86c"},"bus":[{"created":"2026-02-07T21:48:23.4683235\u002B02:00","configured":"2026-02-07T21:48:23.7244527\u002B02:00","started":"2026-02-07T21:48:23.9944346\u002B02:00","name":"IBus","endpoints":[{"name":"user-db","type":"RabbitMQ","prefetch_count":1,"consumer_count":1,"message_count":1},{"name":"bank-account-db","type":"RabbitMQ","prefetch_count":1,"consumer_count":1,"message_count":1},{"name":"payment-event","type":"RabbitMQ","prefetch_count":1,"consumer_count":1,"message_count":1},{"name":"funding-db","type":"RabbitMQ","prefetch_count":1,"consumer_count":1,"message_count":1},{"name":"funding-conditions-db","type":"RabbitMQ","prefetch_count":1,"consumer_count":1,"message_count":1},{"name":"funder-db","type":"RabbitMQ","prefetch_count":1,"consumer_count":1,"message_count":1},{"name":"payment-db","type":"RabbitMQ","prefetch_count":1,"consumer_count":1,"message_count":1},{"name":"_bus_","type":"RabbitMQ","prefetch_count":32}]}]}
+2026-02-07 21:57:58.641 +02:00 [INF] MongoDB Database Background Service for Data Streaming is stopping.
+2026-02-07 21:57:58.701 +02:00 [INF] Bus stopped: "rabbitmq://localhost/"

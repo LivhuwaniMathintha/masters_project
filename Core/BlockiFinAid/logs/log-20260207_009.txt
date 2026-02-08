@@ -1,0 +1,78 @@
+2026-02-07 22:51:21.208 +02:00 [INF] Configured endpoint user-db, Consumer: BlockiFinAid.Services.Messaging.UserDbConsumer
+2026-02-07 22:51:21.244 +02:00 [INF] Configured endpoint bank-account-db, Consumer: BlockiFinAid.Services.Messaging.BankAccountDbConsumer
+2026-02-07 22:51:21.247 +02:00 [INF] Configured endpoint payment-event, Consumer: BlockiFinAid.Services.Messaging.PaymentEventConsumer
+2026-02-07 22:51:21.249 +02:00 [INF] Configured endpoint funding-db, Consumer: BlockiFinAid.Services.Messaging.FundingDbConsumer
+2026-02-07 22:51:21.251 +02:00 [INF] Configured endpoint funding-conditions-db, Consumer: BlockiFinAid.Services.Messaging.FundingConditionsDbConsumer
+2026-02-07 22:51:21.259 +02:00 [INF] Configured endpoint funder-db, Consumer: BlockiFinAid.Services.Messaging.FunderDbConsumer
+2026-02-07 22:51:21.261 +02:00 [INF] Configured endpoint payment-db, Consumer: BlockiFinAid.Services.Messaging.PaymentDbConsumer
+2026-02-07 22:51:21.553 +02:00 [INF] Seeding users...
+2026-02-07 22:51:21.555 +02:00 [INF] Seeding api admin...
+2026-02-07 22:51:21.564 +02:00 [INF] Hashing password for new user: BlockiFinAid.Data.Models.UserAccessControl
+2026-02-07 22:51:21.565 +02:00 [INF] Bus started: "rabbitmq://localhost/"
+2026-02-07 22:51:21.679 +02:00 [INF] MongoDB Database Background Service for Data Streaming is starting.
+2026-02-07 22:51:21.681 +02:00 [INF] Starting to watch for new inserts in PaymentModel.
+2026-02-07 22:51:21.681 +02:00 [INF] Starting to watch for new inserts in FundingModel.
+2026-02-07 22:51:21.681 +02:00 [INF] Starting to watch for new inserts in FundingConditionsModel.
+2026-02-07 22:51:21.681 +02:00 [INF] Starting to watch for new inserts in FunderModel.
+2026-02-07 22:51:21.681 +02:00 [INF] Starting to watch for new inserts in BankAccountModel.
+2026-02-07 22:51:21.681 +02:00 [INF] Starting to watch for new inserts in UserModel.
+2026-02-07 22:51:21.766 +02:00 [INF] User api-admin has been registered
+2026-02-07 22:51:21.824 +02:00 [INF] Reading funders from C:\Users\user\Documents\External_Projects\BlockiFinAid\Backend.Core\BlockiFinAid\Data/DataSeeds/funders.json
+2026-02-07 22:51:21.917 +02:00 [INF] Found 5 items in the JSON file. Starting to seed...
+2026-02-07 22:51:21.927 +02:00 [INF] Funder National Student Financial Aid Scheme already exists. Ignoring it.
+2026-02-07 22:51:21.930 +02:00 [INF] Funder National Research Foundation already exists. Ignoring it.
+2026-02-07 22:51:21.932 +02:00 [INF] Funder Canon Collins Trust already exists. Ignoring it.
+2026-02-07 22:51:21.935 +02:00 [INF] Funder Allan Gray Orbis Foundation already exists. Ignoring it.
+2026-02-07 22:51:21.937 +02:00 [INF] Funder Sector Education and Training Authorities already exists. Ignoring it.
+2026-02-07 22:51:21.941 +02:00 [INF] Reading users from Json file C:\Users\user\Documents\External_Projects\BlockiFinAid\Backend.Core\BlockiFinAid\Data/DataSeeds/funderUsers.json
+2026-02-07 22:51:21.945 +02:00 [INF] Found 4 users in the JSON file. Starting to seed...
+2026-02-07 22:51:21.955 +02:00 [ERR] UserFunder National Student Financial Aid Scheme already exists. Skipping user seeding
+2026-02-07 22:51:21.957 +02:00 [ERR] UserFunder National Research Foundation already exists. Skipping user seeding
+2026-02-07 22:51:21.960 +02:00 [ERR] UserFunder Allan Gray Orbis Foundation already exists. Skipping user seeding
+2026-02-07 22:51:21.963 +02:00 [ERR] UserFunder Sector Education and Training Authorities already exists. Skipping user seeding
+2026-02-07 22:51:21.964 +02:00 [INF] [User Seeder] - Reading users from Json file C:\Users\user\Documents\External_Projects\BlockiFinAid\Backend.Core\BlockiFinAid\Data/DataSeeds/users.json
+2026-02-07 22:51:21.966 +02:00 [INF] [User Seeder] - Found 11 users in the JSON file. Starting to seed...
+2026-02-07 22:51:21.970 +02:00 [INF] [User Seeder] - User with email jane.smith@uj.ac.za already exists...
+2026-02-07 22:51:21.974 +02:00 [INF] [User Seeder] - User with email john.doe@uj.ac.za already exists...
+2026-02-07 22:51:21.978 +02:00 [INF] [User Seeder] - User with email jane.smith@uj.ac.za already exists...
+2026-02-07 22:51:21.982 +02:00 [INF] [User Seeder] - User with email peter.jones@student.uj.ac.za already exists...
+2026-02-07 22:51:21.986 +02:00 [INF] [User Seeder] - User with email mary.williams@student.uj.ac.za already exists...
+2026-02-07 22:51:21.990 +02:00 [INF] [User Seeder] - User with email david.chen@student.uj.ac.za already exists...
+2026-02-07 22:51:21.994 +02:00 [INF] [User Seeder] - User with email emily.white@student.uj.ac.za already exists...
+2026-02-07 22:51:21.999 +02:00 [INF] [User Seeder] - User with email chris.lee@student.uj.ac.za already exists...
+2026-02-07 22:51:22.003 +02:00 [INF] [User Seeder] - User with email sarah.brown@student.uj.ac.za already exists...
+2026-02-07 22:51:22.008 +02:00 [INF] [User Seeder] - User with email michael.davis@student.uj.ac.za already exists...
+2026-02-07 22:51:22.012 +02:00 [INF] [User Seeder] - User with email olivia.wilson@student.uj.ac.za already exists...
+2026-02-07 22:53:21.864 +02:00 [INF] [Payment Initiator] - Processing payments for National Student Financial Aid Scheme on "2026-02-09T00:00:00.0000000"
+2026-02-07 22:53:21.977 +02:00 [INF] Created PaymentModel with id 6f551b53-d3c0-4244-88f5-dcd8b881831b in the collection payments
+2026-02-07 22:53:21.979 +02:00 [INF] Found a change in the stream.
+2026-02-07 22:53:21.988 +02:00 [INF] New PaymentModel entry found. Publishing to Rabbit MQ.
+2026-02-07 22:53:21.992 +02:00 [INF] Created audit trail with id 8de5dccd-69be-4a36-8cb3-7d1e584a6fd1
+2026-02-07 22:53:22.128 +02:00 [INF] Published message of type: PaymentModel
+2026-02-07 22:53:22.130 +02:00 [INF] Publishing to Rabbit MQ has completed for PaymentModel
+2026-02-07 22:53:22.159 +02:00 [INF] Found a change in the stream.
+2026-02-07 22:53:22.159 +02:00 [INF] Created PaymentModel with id dab314fd-442a-4c8e-95a5-a6dc89194c21 in the collection payments
+2026-02-07 22:53:22.160 +02:00 [INF] New PaymentModel entry found. Publishing to Rabbit MQ.
+2026-02-07 22:53:22.167 +02:00 [INF] Published message of type: PaymentModel
+2026-02-07 22:53:22.167 +02:00 [INF] Created audit trail with id 8391de76-3171-4e9e-95dd-4ee2b954e1b4
+2026-02-07 22:53:22.168 +02:00 [INF] Publishing to Rabbit MQ has completed for PaymentModel
+2026-02-07 22:53:22.202 +02:00 [INF] Created PaymentCheckerModel with id 2aaee5d3-f4ec-4adb-940d-65dc2323d569 in the collection paymentChecker
+2026-02-07 22:53:22.207 +02:00 [INF] Created audit trail with id bbfefbbf-ea6f-4ee1-949d-f2f031d4ef85
+2026-02-07 22:53:22.213 +02:00 [INF] [Payment Initiator] - Processing payments for National Research Foundation on "2026-02-09T00:00:00.0000000"
+2026-02-07 22:53:22.231 +02:00 [INF] Created PaymentCheckerModel with id c65adac1-1cb7-4860-8b2a-14ec6b514aab in the collection paymentChecker
+2026-02-07 22:53:22.236 +02:00 [INF] Created audit trail with id a5f5a457-2e1b-4ae9-aad6-e23339d91980
+2026-02-07 22:53:22.239 +02:00 [INF] [Payment Initiator] - Payment date "2026-02-08T00:00:00.0000000" for Canon Collins Trust is not "2026-02-09T00:00:00.0000000Z"
+2026-02-07 22:53:22.242 +02:00 [INF] [Payment Initiator] - Payment date "2026-02-24T00:00:00.0000000" for Allan Gray Orbis Foundation is not "2026-02-09T00:00:00.0000000Z"
+2026-02-07 22:53:22.243 +02:00 [INF] [Payment Initiator] - Payment date "2026-02-24T00:00:00.0000000" for Sector Education and Training Authorities is not "2026-02-09T00:00:00.0000000Z"
+2026-02-07 22:53:24.212 +02:00 [INF] [Payment Consumer] - Consuming payment from the queue 
+2026-02-07 22:53:24.273 +02:00 [INF] added audit trail with id dd83c51c-bd1b-4c79-8e47-af3417c4d0c6 for this entry
+2026-02-07 22:53:24.311 +02:00 [INF] [PaymentContract] receipt from the contract with blockhash: 0xe40041cf242068398d16388e9430651e150e79847f3ed19e782c8c710b9d41d9
+2026-02-07 22:53:24.313 +02:00 [INF] [Payment Consumer] - Payment  added to the smart contract with status: 0xe40041cf242068398d16388e9430651e150e79847f3ed19e782c8c710b9d41d9
+2026-02-07 22:53:26.354 +02:00 [INF] [Payment Consumer] - Consuming payment from the queue 
+2026-02-07 22:53:26.389 +02:00 [INF] added audit trail with id e1f264ac-b40d-49b9-a361-f5c59ce81c7b for this entry
+2026-02-07 22:53:26.419 +02:00 [INF] [PaymentContract] receipt from the contract with blockhash: 0x92d78a3cc5c0b0058abf23ac5ac856386adf37f08bce646d615e23718d71dc5c
+2026-02-07 22:53:26.421 +02:00 [INF] [Payment Consumer] - Payment  added to the smart contract with status: 0x92d78a3cc5c0b0058abf23ac5ac856386adf37f08bce646d615e23718d71dc5c
+2026-02-07 22:56:21.586 +02:00 [INF] Usage Telemetry: {"id":"b0420000-ff4a-163f-2044-08de668aa61c","created":"2026-02-07T22:51:21.1570917\u002B02:00","host":{"framework_version":"9.0.12","mass_transit_version":"8.5.1.0","operating_system_version":"Microsoft Windows NT 10.0.26200.0","time_zone_info":"(UTC\u002B02:00) Harare, Pretoria","commit_hash":"6a2f4c07dfe21c14ed78299d6d4b4f4cf57bb86c"},"bus":[{"created":"2026-02-07T22:51:21.1620008\u002B02:00","configured":"2026-02-07T22:51:21.3351166\u002B02:00","started":"2026-02-07T22:51:21.5642212\u002B02:00","name":"IBus","endpoints":[{"name":"user-db","type":"RabbitMQ","prefetch_count":1,"consumer_count":1,"message_count":1},{"name":"bank-account-db","type":"RabbitMQ","prefetch_count":1,"consumer_count":1,"message_count":1},{"name":"payment-event","type":"RabbitMQ","prefetch_count":1,"consumer_count":1,"message_count":1},{"name":"funding-db","type":"RabbitMQ","prefetch_count":1,"consumer_count":1,"message_count":1},{"name":"funding-conditions-db","type":"RabbitMQ","prefetch_count":1,"consumer_count":1,"message_count":1},{"name":"funder-db","type":"RabbitMQ","prefetch_count":1,"consumer_count":1,"message_count":1},{"name":"payment-db","type":"RabbitMQ","prefetch_count":1,"consumer_count":1,"message_count":1},{"name":"_bus_","type":"RabbitMQ","prefetch_count":32}]}]}
+2026-02-07 23:00:41.312 +02:00 [INF] [Funding Contract Controller] - Fetching Funder: Sector Education and Training Authorities
+2026-02-07 23:00:41.345 +02:00 [INF] [Funding Contract Controller] - Fetching Funder: Sector Education and Training Authorities
+2026-02-07 23:04:08.982 +02:00 [INF] Successfully updated active status to false for funding in 0499554b-6e76-45b0-9c45-952db71f7cc2
